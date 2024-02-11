@@ -36,7 +36,7 @@ _endaction="";
         };
 
     
-}forEach allMissionObjects "EmptyDetector"; 
+}forEach allMapMarkers; 
 
 //Splits each set of tight LZs by town any applies the trigger by town
 

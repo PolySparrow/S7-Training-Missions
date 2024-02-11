@@ -23,7 +23,8 @@
  *
  */
 params [["_TriggerArea",objNull,[objNull]],["_MaxVic",3],["_VicOnRoadStatus",0],["_MaxNumofSquads",3],["_InfOnRoadStatus",0],["_MaxIGLATurret",1],["_IglaOnRoadStatus",1],["_MaxRadarGuidedGun",1],["_RadarGuidedGunStatus",0]];
-
+_TRG=createTrigger ["EmptyDetector",getPOS _TriggerArea];
+_TRG setTriggerArea [500,500,0,false,-1];
 //OPFOR Units Definitions
 _randomVehicleArray=["UK3CB_CW_SOV_O_EARLY_BTR40", 
 "UK3CB_CW_SOV_O_EARLY_BTR40_MG", 
@@ -82,21 +83,21 @@ switch (_RadarGuidedGunStatus) do {
 //Find all unique locations to spawn stuff
 _countofArray=0;
 while {_RoadIterations!=_countofArray} do {
-	_Pos=[_TriggerArea,0] call rScripts_fnc_ga_findsuitablespot;
+	_Pos=[_TRG,0] call rScripts_fnc_ga_findsuitablespot;
 	_RoadSpawns pushBackUnique _Pos;
 	_countofArray=count _RoadSpawns;
 };	
 //systemChat format["%1",_RoadSpawns];
 _countofArray=0;
 while {_NotRoadIterations!=_countofArray} do {
-	_Pos=[_TriggerArea,1] call rScripts_fnc_ga_findsuitablespot;
+	_Pos=[_TRG,1] call rScripts_fnc_ga_findsuitablespot;
 	_NotRoadSpawns pushBackUnique _Pos;
 	_countofArray=count _NotRoadSpawns;
 };	
 //systemChat format["%1",_NotRoadSpawns];
 _countofArray=0;
 while {_AnythingSpawnIterations!=_countofArray} do {
-	_Pos=[_TriggerArea,2] call rScripts_fnc_ga_findsuitablespot;
+	_Pos=[_TRG,2] call rScripts_fnc_ga_findsuitablespot;
 	_AllSpawns pushBackUnique _Pos;
 	_countofArray=count _AllSpawns;
 };
@@ -104,22 +105,22 @@ while {_AnythingSpawnIterations!=_countofArray} do {
 //Spawn in random vechiles and squads, after being spawned delete it as a possible location from the spawn list
 
 
-_spawnsLeft=[_VicOnRoadStatus,_MaxVic,_randomVehicleArray,true,_RoadSpawns,_NotRoadSpawns,_AllSpawns,_TriggerArea] call rScripts_fnc_ga_spawnloop;
+_spawnsLeft=[_VicOnRoadStatus,_MaxVic,_randomVehicleArray,true,_RoadSpawns,_NotRoadSpawns,_AllSpawns,_TRG] call rScripts_fnc_ga_spawnloop;
 //systemChat format["%1",_spawnsLeft];
 _RoadSpawns=_spawnsLeft select 0;
 _NotRoadSpawns=_spawnsLeft select 1;
 _AllSpawns=_spawnsLeft select 2;
-_spawnsLeft=[_InfOnRoadStatus,_MaxNumofSquads,_randomInfantryArray,true,_RoadSpawns,_NotRoadSpawns,_AllSpawns,_TriggerArea] call rScripts_fnc_ga_spawnloop;
+_spawnsLeft=[_InfOnRoadStatus,_MaxNumofSquads,_randomInfantryArray,true,_RoadSpawns,_NotRoadSpawns,_AllSpawns,_TRG] call rScripts_fnc_ga_spawnloop;
 //systemChat format["%1",_spawnsLeft];
 _RoadSpawns=_spawnsLeft select 0;
 _NotRoadSpawns=_spawnsLeft select 1;
 _AllSpawns=_spawnsLeft select 2;
-_spawnsLeft=[_IglaOnRoadStatus,_MaxIGLATurret,_IglaTurret,false,_RoadSpawns,_NotRoadSpawns,_AllSpawns,_TriggerArea] call rScripts_fnc_ga_spawnloop;
+_spawnsLeft=[_IglaOnRoadStatus,_MaxIGLATurret,_IglaTurret,false,_RoadSpawns,_NotRoadSpawns,_AllSpawns,_TRG] call rScripts_fnc_ga_spawnloop;
 //systemChat format["%1",_spawnsLeft];
 _RoadSpawns=_spawnsLeft select 0;
 _NotRoadSpawns=_spawnsLeft select 1;
 _AllSpawns=_spawnsLeft select 2;
-_spawnsLeft=[_RadarGuidedGunStatus,_MaxRadarGuidedGun,_RadarGuidedGun,true,_RoadSpawns,_NotRoadSpawns,_AllSpawns,_TriggerArea] call rScripts_fnc_ga_spawnloop;
+_spawnsLeft=[_RadarGuidedGunStatus,_MaxRadarGuidedGun,_RadarGuidedGun,true,_RoadSpawns,_NotRoadSpawns,_AllSpawns,_TRG] call rScripts_fnc_ga_spawnloop;
 //systemChat format["%1",_spawnsLeft];
 _RoadSpawns=_spawnsLeft select 0;
 _NotRoadSpawns=_spawnsLeft select 1;
