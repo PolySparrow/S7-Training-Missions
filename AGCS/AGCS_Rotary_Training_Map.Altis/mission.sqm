@@ -12,22 +12,22 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=4259;
+		nextID=4265;
 	};
 	class MarkerIDProvider
 	{
-		nextID=617;
+		nextID=623;
 	};
 	class LayerIndexProvider
 	{
-		nextID=5655;
+		nextID=5714;
 	};
 	class Camera
 	{
-		pos[]={23744.484,11.233326,17245.32};
-		dir[]={0.31876692,-0.27854487,-0.90606493};
-		up[]={0.092458494,0.96040332,-0.26280484};
-		aside[]={-0.94340461,4.4050284e-007,-0.33190084};
+		pos[]={4557.9341,385.0545,21336.547};
+		dir[]={0.05736389,-0.62861758,0.77559608};
+		up[]={0.046366565,0.77771461,0.62690532};
+		aside[]={0.99727607,3.7252903e-009,-0.073759571};
 	};
 };
 binarizationWanted=0;
@@ -68574,7 +68574,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=1348;
+		items=1354;
 		class Item0
 		{
 			dataType="Logic";
@@ -80567,8 +80567,8 @@ class Mission
 			{
 				class Attribute0
 				{
-					property="MELB_clan";
-					expression="_this animate ['hide_clan',_value,true]";
+					property="MELB_SN_Nose";
+					expression="_this animate ['hide_SN_nose',_value,true]";
 					class Value
 					{
 						class data
@@ -80632,8 +80632,8 @@ class Mission
 				};
 				class Attribute5
 				{
-					property="MELB_SN_Nose";
-					expression="_this animate ['hide_SN_nose',_value,true]";
+					property="MELB_clan";
+					expression="_this animate ['hide_clan',_value,true]";
 					class Value
 					{
 						class data
@@ -82871,8 +82871,8 @@ class Mission
 			{
 				class Attribute0
 				{
-					property="MELB_clan";
-					expression="_this animate ['hide_clan',_value,true]";
+					property="MELB_SN_Nose";
+					expression="_this animate ['hide_SN_nose',_value,true]";
 					class Value
 					{
 						class data
@@ -82936,8 +82936,8 @@ class Mission
 				};
 				class Attribute5
 				{
-					property="MELB_SN_Nose";
-					expression="_this animate ['hide_SN_nose',_value,true]";
+					property="MELB_clan";
+					expression="_this animate ['hide_clan',_value,true]";
 					class Value
 					{
 						class data
@@ -94387,7 +94387,7 @@ class Mission
 				{
 					dataType="Trigger";
 					position[]={17550.125,13.058828,13240.125};
-					angle=3.9111078;
+					angle=3.9111075;
 					class Attributes
 					{
 						name="IFR_FINISH";
@@ -102647,6 +102647,60 @@ class Mission
 			};
 			id=4155;
 			atlOffset=-2.967865;
+		};
+		class Item1348
+		{
+			dataType="Marker";
+			position[]={21345.053,20.458,16352.364};
+			name="GA_KALOCHORI_MARKER";
+			type="Empty";
+			id=4259;
+			atlOffset=-2.2888184e-005;
+		};
+		class Item1349
+		{
+			dataType="Marker";
+			position[]={20194.434,55.320999,11633.211};
+			name="GA_CHALKEIA_MARKER";
+			type="Empty";
+			id=4260;
+			atlOffset=1.1444092e-005;
+		};
+		class Item1350
+		{
+			dataType="Marker";
+			position[]={18101,24.631001,15239};
+			name="GA_CHARKIA_MARKER";
+			type="Empty";
+			id=4261;
+			atlOffset=0.00033950806;
+		};
+		class Item1351
+		{
+			dataType="Marker";
+			position[]={5033.6128,47.449001,11231.298};
+			name="GA_PANOCHORI_MARKER";
+			type="Empty";
+			id=4262;
+			atlOffset=-0.00011825562;
+		};
+		class Item1352
+		{
+			dataType="Marker";
+			position[]={7117.9038,113.787,16447.516};
+			name="GA_KORE_MARKER";
+			type="Empty";
+			id=4263;
+			atlOffset=0.00012207031;
+		};
+		class Item1353
+		{
+			dataType="Marker";
+			position[]={4555.9082,302.771,21460.711};
+			name="GA_OREOKASTRO_MARKER";
+			type="Empty";
+			id=4264;
+			atlOffset=-0.0002746582;
 		};
 	};
 	class Connections
