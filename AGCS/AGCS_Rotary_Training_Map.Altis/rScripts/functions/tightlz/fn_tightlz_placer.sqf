@@ -15,7 +15,6 @@
  * Public: No
  *
  */
-  if (!isServer) exitWith {};
 // Initialize arrays
 _randomLZArray = [];
 _townArray = [];
