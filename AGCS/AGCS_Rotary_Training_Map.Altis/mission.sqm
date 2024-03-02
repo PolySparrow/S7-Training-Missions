@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=5714;
+		nextID=5773;
 	};
 	class Camera
 	{
-		pos[]={9793.2148,150.77161,15303.922};
-		dir[]={0.96490622,-0.059615936,0.25617203};
-		up[]={0.057717852,0.99819863,0.015324884};
-		aside[]={0.2566306,-3.660316e-007,-0.9666242};
+		pos[]={18805.322,526.85016,15079.478};
+		dir[]={-0.90865862,-0.41625276,-0.032966658};
+		up[]={-0.41598123,0.90924788,-0.015092231};
+		aside[]={-0.036257096,1.929584e-008,0.99934828};
 	};
 };
 binarizationWanted=0;
@@ -80567,8 +80567,8 @@ class Mission
 			{
 				class Attribute0
 				{
-					property="MELB_SN_Nose";
-					expression="_this animate ['hide_SN_nose',_value,true]";
+					property="MELB_clan";
+					expression="_this animate ['hide_clan',_value,true]";
 					class Value
 					{
 						class data
@@ -80632,8 +80632,8 @@ class Mission
 				};
 				class Attribute5
 				{
-					property="MELB_clan";
-					expression="_this animate ['hide_clan',_value,true]";
+					property="MELB_SN_Nose";
+					expression="_this animate ['hide_SN_nose',_value,true]";
 					class Value
 					{
 						class data
@@ -82871,8 +82871,8 @@ class Mission
 			{
 				class Attribute0
 				{
-					property="MELB_SN_Nose";
-					expression="_this animate ['hide_SN_nose',_value,true]";
+					property="MELB_clan";
+					expression="_this animate ['hide_clan',_value,true]";
 					class Value
 					{
 						class data
@@ -82936,8 +82936,8 @@ class Mission
 				};
 				class Attribute5
 				{
-					property="MELB_clan";
-					expression="_this animate ['hide_clan',_value,true]";
+					property="MELB_SN_Nose";
+					expression="_this animate ['hide_SN_nose',_value,true]";
 					class Value
 					{
 						class data
@@ -93363,7 +93363,7 @@ class Mission
 						};
 					};
 					id=4197;
-					atlOffset=0.9428997;
+					atlOffset=-6.4468784;
 				};
 				class Item4
 				{
@@ -93766,11 +93766,11 @@ class Mission
 						};
 					};
 					id=4200;
-					atlOffset=15.4044;
+					atlOffset=0.59671783;
 				};
 			};
 			id=3179;
-			atlOffset=-32.383404;
+			atlOffset=-56.399143;
 		};
 		class Item1320
 		{
@@ -94278,7 +94278,7 @@ class Mission
 				{
 					dataType="Trigger";
 					position[]={17550.125,13.058828,13240.125};
-					angle=3.9111083;
+					angle=3.9111078;
 					class Attributes
 					{
 						name="IFR_FINISH";
@@ -94359,6 +94359,7 @@ class Mission
 					class Attributes
 					{
 						name="GA_PANOCHORI";
+						text="GA_PANOCHORI";
 						condition="";
 						sizeA=500;
 						sizeB=500;
@@ -94384,6 +94385,7 @@ class Mission
 					class Attributes
 					{
 						name="GA_KORE";
+						text="GA_KORE";
 						condition="";
 						sizeA=500;
 						sizeB=500;
@@ -94400,6 +94402,7 @@ class Mission
 					class Attributes
 					{
 						name="GA_OREOKASTRO";
+						text="GA_OREOKASTRO";
 						condition="";
 						sizeA=500;
 						sizeB=500;
@@ -94415,6 +94418,7 @@ class Mission
 					class Attributes
 					{
 						name="GA_CHALKEIA";
+						text="GA_CHALKEIA";
 						condition="";
 						sizeA=500;
 						sizeB=500;
@@ -94431,6 +94435,7 @@ class Mission
 					class Attributes
 					{
 						name="GA_CHARKIA";
+						text="GA_CHARKIA";
 						condition="";
 						sizeA=500;
 						sizeB=500;
@@ -94446,6 +94451,7 @@ class Mission
 					class Attributes
 					{
 						name="GA_KALOCHORI";
+						text="GA_KALOCHORI";
 						condition="";
 						sizeA=500;
 						sizeB=500;
