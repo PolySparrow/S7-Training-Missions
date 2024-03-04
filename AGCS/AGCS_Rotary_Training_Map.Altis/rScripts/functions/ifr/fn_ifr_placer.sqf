@@ -17,5 +17,5 @@
  */
 
 IFR_SELECTOR addAction ["ARE Task 3: IFR Start",  {call rScripts_fnc_ifr_start;}];  
-IFR_SELECTOR addAction ["STOP ARE Task 3: IFR STOP",{call rScripts_fnc_ifr_end;}]; 
- 
+//IFR_SELECTOR addAction ["STOP ARE Task 3: IFR STOP",{call rScripts_fnc_ifr_end;}]; 
+[IFR_SELECTOR,"STOP ARE Task 3: IFR STOP", IFR_FINISH] call cScripts_fnc_teleport; 

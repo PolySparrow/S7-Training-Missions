@@ -14,14 +14,12 @@
  *
  * Public: No
  */
-  if (!isServer) exitWith {};
+
 //Sets the time to noon, overcast to 0 and fog to 0 along with fixing all the lights around LZ blind
 setTimeMultiplier 1;  
-skipTime ((12 - dayTime + 24) % 24); 
-0 setOvercast 0;  
-forceWeatherChange;
-0 setFog [0,.01,200]; 
-forceWeatherChange;
+_hourstoskip = ((12 - dayTime + 24) % 24); 
+_hourstoskip remoteExec ["skipTime", 2, false];
+[0.5,0]call rScripts_fnc_ifr_weather_loop;
 [0.0,200]call rScripts_fnc_turnofflights;
 _objectArray=nearestObjects [getPos IFR_FINISH,[ 
  "NVG_TargetC"
@@ -30,3 +28,5 @@ _objectArray=nearestObjects [getPos IFR_FINISH,[
     //systemChat format["%1",_x];
     deleteVehicle _x;
 }forEach _objectArray;
+
+

@@ -18,6 +18,7 @@ class rScripts {
 		class ifr_end {};
 		class ifr_placer {};
 		class ifr_start {};
+		class ifr_weather_loop {};
 	};
 	class slinglz {
 		file = "rScripts\functions\slinglz";

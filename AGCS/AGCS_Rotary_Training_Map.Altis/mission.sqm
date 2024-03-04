@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=5773;
+		nextID=5891;
 	};
 	class Camera
 	{
-		pos[]={18805.322,526.85016,15079.478};
-		dir[]={-0.90865862,-0.41625276,-0.032966658};
-		up[]={-0.41598123,0.90924788,-0.015092231};
-		aside[]={-0.036257096,1.929584e-008,0.99934828};
+		pos[]={14640.228,45.918369,16716.873};
+		dir[]={0.65539294,-0.36945641,0.65879351};
+		up[]={0.26057041,0.92924857,0.26192224};
+		aside[]={0.70895344,-4.0372834e-007,-0.70529372};
 	};
 };
 binarizationWanted=0;
@@ -68553,7 +68553,6 @@ class Mission
 	class Intel
 	{
 		timeOfChanges=1800.0002;
-		startWeather=0.30000001;
 		startWind=0.1;
 		startWaves=0.1;
 		forecastWeather=0;
@@ -94278,20 +94277,19 @@ class Mission
 				{
 					dataType="Trigger";
 					position[]={17550.125,13.058828,13240.125};
-					angle=3.9111078;
+					angle=3.9111083;
 					class Attributes
 					{
 						name="IFR_FINISH";
 						text="IFR Finish";
-						onActivation="call cScripts_fnc_ifr_end;";
+						onActivation="call rScripts_fnc_ifr_end;";
 						sizeA=8;
 						sizeB=8;
 						sizeC=2;
 						timeout[]={5,5,5};
 						repeatable=1;
-						activationBy="ANYPLAYER";
+						activationBy="WEST";
 						isRectangle=1;
-						isServerOnly=1;
 					};
 					id=3270;
 					type="EmptyDetectorArea10x10";
