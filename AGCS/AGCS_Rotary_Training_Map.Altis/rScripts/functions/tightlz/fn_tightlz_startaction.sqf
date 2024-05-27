@@ -25,4 +25,4 @@ _randomLZ = selectRandom _randomLZArray;
 TIGHT_LZ_SMOKE_SPAWNER setPOS (getPOS _randomLZ);
 
 // Send a message to the west side's HQ indicating the town to proceed to
-[[west,"HQ"], format ["Proceed to %1", _townFilter]] remoteExec ["sideChat", -2];
+[[west,"HQ"], format ["Proceed to %1", _townFilter]] remoteExec ["sideChat", 2];

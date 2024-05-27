@@ -11,5 +11,5 @@ call rScripts_fnc_tightlz_placer;
 call rScripts_fnc_slinglz_placer;
 call rScripts_fnc_ifr_placer;
 call rScripts_fnc_ga_placer;
-
+call rScripts_fnc_vic_startaction;
 INFO("postInit", "rScripts initialized.");

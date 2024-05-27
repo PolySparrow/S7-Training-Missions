@@ -26,4 +26,4 @@ _smokerGrid = mapGridPosition _smokerPOS;
 _message = format ["Drop Off Location %1", _smokerGrid]; 
 
 // Send the message to the west side's HQ in side chat
-[[west,"HQ"], _message] remoteExec ["sideChat", -2]; 
+[[west,"HQ"], _message] remoteExec ["sideChat", 2]; 

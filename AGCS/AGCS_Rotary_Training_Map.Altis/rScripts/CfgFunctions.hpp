@@ -38,4 +38,13 @@ class rScripts {
 		class smoke_maker {};
 		class turnofflights {};
 	};
+	class mission {
+		file = "rScripts\functions\mission";
+
+	};
+	class vicid {
+		file = "rScripts\functions\vicid";
+		class vic_display{};
+		class vic_startaction{};
+	};
 };

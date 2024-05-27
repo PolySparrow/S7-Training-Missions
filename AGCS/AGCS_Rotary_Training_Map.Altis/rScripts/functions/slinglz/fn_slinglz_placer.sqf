@@ -36,6 +36,7 @@ _randomLZArray = [];
     _x setTriggerType "NONE";
     _x setTriggerActivation ["ANYPLAYER", "NOT PRESENT", true];
     _x setTriggerStatements [_conditionStatement, _act, _deact];
+    _x setTriggerInterval 3; 
 } forEach _randomLZArray;
 
 // Add actions to SLING_LZ_SELECTOR

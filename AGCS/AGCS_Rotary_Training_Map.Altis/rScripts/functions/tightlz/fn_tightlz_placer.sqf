@@ -69,6 +69,7 @@ _townLZs = [];
         _x setTriggerType "NONE";
         _x setTriggerActivation ["ANYPLAYER", "NOT PRESENT", true];
         _x setTriggerStatements ["this && TIGHT_LZ_SMOKE_SPAWNER inArea thisTrigger", _act, _deact];
+        _x setTriggerInterval 3; 
         //systemChat format["%1",_deact];
     } forEach _townLZs;
 } forEach _townArray;
