@@ -68,6 +68,7 @@ class Extended_PostInit_EventHandlers {
 };
 
 class CfgFunctions {
+    #include "dgScripts\CfgFunctions.hpp"
     #include "cScripts\CfgFunctions.hpp"
 };
 #include "cScripts\CfgLoadouts.hpp"

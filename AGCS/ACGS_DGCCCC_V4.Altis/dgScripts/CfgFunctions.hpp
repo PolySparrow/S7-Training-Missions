@@ -8,4 +8,12 @@ class dgScripts {
 		file = "dgScripts\functions\waypoints";
 		class add_waypoint_2{};
 	};
+	class cleanup {
+		file = "dgScripts\functions\cleanup";
+		class cleanup_moving_tgt{};
+	};
+	class manager {
+		file = "dgScripts\functions\manager";
+		class continue_range{};
+	};
 };

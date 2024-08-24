@@ -1,3 +1,5 @@
+call dgScripts_fnc_cleanup_moving_tgt;
+
 _group0 = createGroup [civilian, true];
 _group1 = createGroup [civilian, true];
 _group2 = createGroup [civilian, true];

@@ -18,7 +18,7 @@
  _independentGroups = (allGroups select {side _x == resistance}) select {leader _x inArea _Trg};
 
 _HeliPilotGroup= _independentGroups select 0;
-_heliHeight=150;
+
 /*_waypointArray=[
 [26929.4,20093,_heliHeight],
 [25781.3,19121.7,_heliHeight],
@@ -45,4 +45,4 @@ _heliHeight=150;
 {
 	_HeliPilotGroup addWaypoint [_x,-1];
 
-} forEach _waypointArray;triggerActivated
+} forEach _waypointArray;
