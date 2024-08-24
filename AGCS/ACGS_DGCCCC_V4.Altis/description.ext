@@ -61,10 +61,11 @@ class Header {
 };
 
 class Extended_PreInit_EventHandlers {
-    cScripts_preInit = "0 spawn compile preprocessFileLineNumbers 'cScripts\cScripts_preInit.sqf'";
+    cScripts_preInit = "0 spawn compile preprocessFileLineNumbers 'cScripts\cScripts_preInit.sqf'";1
 };
 class Extended_PostInit_EventHandlers {
     cScripts_postInit = "0 spawn compile preprocessFileLineNumbers 'cScripts\cScripts_postInit.sqf'";
+    dgScripts_postInit = "0 spawn compile preprocessFileLineNumbers 'dgScripts\functions\manager\fn_add_action.sqf'";
 };
 
 class CfgFunctions {
