@@ -65,7 +65,7 @@ class Extended_PreInit_EventHandlers {
 };
 class Extended_PostInit_EventHandlers {
     cScripts_postInit = "0 spawn compile preprocessFileLineNumbers 'cScripts\cScripts_postInit.sqf'";
-    dgScripts_postInit = "0 spawn compile preprocessFileLineNumbers 'dgScripts\functions\manager\fn_add_action.sqf'";
+    dgScripts_postInit = "0 spawn compile preprocessFileLineNumbers 'dgScripts\dgScripts_init.sqf'";
 };
 
 class CfgFunctions {
