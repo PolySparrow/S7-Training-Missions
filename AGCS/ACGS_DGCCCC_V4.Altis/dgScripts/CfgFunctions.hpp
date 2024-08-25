@@ -3,6 +3,7 @@ class dgScripts {
 		file = "dgScripts\functions\spawners";
 		class spawn_helicopters{};
 		class spawn_moving_tgt{};
+
 	};
 	class waypoints {
 		file = "dgScripts\functions\waypoints";
@@ -15,5 +16,7 @@ class dgScripts {
 	class manager {
 		file = "dgScripts\functions\manager";
 		class continue_range{};
+		class add_action{};
+		class target_hit_message{};
 	};
 };

@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=2152;
+		nextID=2153;
 	};
 	class MarkerIDProvider
 	{
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=798;
+		nextID=1048;
 	};
 	class Camera
 	{
-		pos[]={22615.457,46.686275,18413.1};
-		dir[]={0.65730929,-0.71920913,-0.22522214};
-		up[]={0.68036896,0.69479805,-0.23312294};
-		aside[]={-0.3241502,4.2520696e-007,-0.94602853};
+		pos[]={14622.739,23.322594,16772.754};
+		dir[]={-0.51761878,-0.67531168,0.52539712};
+		up[]={-0.47394279,0.73753101,0.48106506};
+		aside[]={0.71236682,2.4787369e-007,0.70182103};
 	};
 };
 binarizationWanted=0;
@@ -63,7 +63,8 @@ addons[]=
 	"cav_alpha_characters",
 	"Desert",
 	"A3_Modules_F_Curator_Curator",
-	"A3_Modules_F_Curator_Respawn"
+	"A3_Modules_F_Curator_Respawn",
+	"A3_Structures_F_EPA_Civ_Camping"
 };
 class AddonsMetaData
 {
@@ -68401,7 +68402,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=52;
+		items=53;
 		class Item0
 		{
 			dataType="Layer";
@@ -68413,6 +68414,7 @@ class Mission
 				{
 					dataType="Layer";
 					name="Boundary Markers";
+					state=1;
 					class Entities
 					{
 						items=2;
@@ -69722,6 +69724,7 @@ class Mission
 				{
 					dataType="Layer";
 					name="Ramparts";
+					state=1;
 					class Entities
 					{
 						items=6;
@@ -69951,8 +69954,8 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={24207.35,13.966917,19366.785};
-								angles[]={6.2791886,1.2867867,0.012000273};
+								position[]={24207.35,13.966908,19366.785};
+								angles[]={6.2791882,1.2867788,0.012007865};
 							};
 							side="Empty";
 							flags=4;
@@ -69962,7 +69965,7 @@ class Mission
 							};
 							id=1403;
 							type="TargetPopUpTarget";
-							atlOffset=0.12400913;
+							atlOffset=0.12400055;
 						};
 						class Item1
 						{
@@ -70281,6 +70284,7 @@ class Mission
 				{
 					dataType="Layer";
 					name="AI and Misc";
+					state=1;
 					class Entities
 					{
 						items=3;
@@ -72469,6 +72473,7 @@ class Mission
 				{
 					dataType="Layer";
 					name="Walls";
+					state=1;
 					class Entities
 					{
 						items=350;
@@ -84908,149 +84913,18 @@ class Mission
 		{
 			dataType="Layer";
 			name="6.Rotary_Aviation_vv4.5.15";
+			state=1;
 			class Entities
 			{
-				items=3;
+				items=1;
 				class Item0
-				{
-					dataType="Layer";
-					name="1.Attack Rotary";
-					class Entities
-					{
-						items=3;
-						class Item0
-						{
-							dataType="Layer";
-							name="Rotary Attack (AH-64D)";
-							class Entities
-							{
-								items=2;
-								class Item0
-								{
-									dataType="Layer";
-									name="AH-64D Raider-1";
-									id=2023;
-									atlOffset=185.97;
-								};
-								class Item1
-								{
-									dataType="Layer";
-									name="AH-64D Raider-2";
-									id=2029;
-									atlOffset=185.97;
-								};
-							};
-							id=2022;
-							atlOffset=185.97;
-						};
-						class Item1
-						{
-							dataType="Layer";
-							name="Rotary Hybrid (MH-60 DAP MLASS)";
-							class Entities
-							{
-								items=2;
-								class Item0
-								{
-									dataType="Layer";
-									name="DAP MLASS Bison-1";
-									id=2036;
-									atlOffset=185.97;
-								};
-								class Item1
-								{
-									dataType="Layer";
-									name="DAP MLASS Bison-2";
-									id=2041;
-									atlOffset=185.97;
-								};
-							};
-							id=2035;
-							atlOffset=185.97;
-						};
-						class Item2
-						{
-							dataType="Layer";
-							name="Rotary Light Attack (AH-6)";
-							class Entities
-							{
-								items=2;
-								class Item0
-								{
-									dataType="Layer";
-									name="AH-6 Sparrow-1";
-									id=2049;
-									atlOffset=185.97;
-								};
-								class Item1
-								{
-									dataType="Layer";
-									name="AH-6 Sparrow-2";
-									id=2054;
-									atlOffset=185.97;
-								};
-							};
-							id=2048;
-							atlOffset=185.97;
-						};
-					};
-					id=2021;
-					atlOffset=185.97;
-				};
-				class Item1
-				{
-					dataType="Layer";
-					name="3.Service Vehicles";
-					id=2061;
-					atlOffset=185.97;
-				};
-				class Item2
 				{
 					dataType="Layer";
 					name="2.Transport Rotary";
 					class Entities
 					{
-						items=3;
+						items=1;
 						class Item0
-						{
-							dataType="Layer";
-							name="Rotary Light Transport (MH-6)";
-							class Entities
-							{
-								items=4;
-								class Item0
-								{
-									dataType="Layer";
-									name="MH-6 Raven-1";
-									id=2067;
-									atlOffset=185.97;
-								};
-								class Item1
-								{
-									dataType="Layer";
-									name="MH-6 Raven-2";
-									id=2072;
-									atlOffset=185.97;
-								};
-								class Item2
-								{
-									dataType="Layer";
-									name="MH-6 Raven-3";
-									id=2078;
-									atlOffset=185.97;
-								};
-								class Item3
-								{
-									dataType="Layer";
-									name="MH-6 Raven-4";
-									id=2084;
-									atlOffset=185.97;
-								};
-							};
-							id=2066;
-							atlOffset=185.97;
-						};
-						class Item1
 						{
 							dataType="Layer";
 							name="Rotary Transport (MH-60M)";
@@ -85228,9 +85102,11 @@ class Mission
 												dynamicSimulation=1;
 											};
 											id=2093;
+											atlOffset=185.97;
 										};
 									};
 									id=2091;
+									atlOffset=185.97;
 								};
 								class Item1
 								{
@@ -85438,9 +85314,11 @@ class Mission
 												dynamicSimulation=1;
 											};
 											id=2101;
+											atlOffset=185.97;
 										};
 									};
 									id=2098;
+									atlOffset=-77.611572;
 								};
 								class Item2
 								{
@@ -85613,9 +85491,11 @@ class Mission
 												dynamicSimulation=1;
 											};
 											id=2108;
+											atlOffset=185.97;
 										};
 									};
 									id=2106;
+									atlOffset=185.97;
 								};
 								class Item3
 								{
@@ -85823,9 +85703,11 @@ class Mission
 												dynamicSimulation=1;
 											};
 											id=2116;
+											atlOffset=185.97;
 										};
 									};
 									id=2113;
+									atlOffset=-77.83754;
 								};
 								class Item4
 								{
@@ -85841,45 +85723,21 @@ class Mission
 								};
 							};
 							id=2090;
-							atlOffset=2.8887315;
-						};
-						class Item2
-						{
-							dataType="Layer";
-							name="Heavy Transport (MH-47 / Chinooks)";
-							class Entities
-							{
-								items=2;
-								class Item0
-								{
-									dataType="Layer";
-									name="Grizzly-1";
-									id=2123;
-									atlOffset=185.97;
-								};
-								class Item1
-								{
-									dataType="Layer";
-									name="Grizzly-2";
-									id=2131;
-									atlOffset=185.97;
-								};
-							};
-							id=2122;
-							atlOffset=185.97;
+							atlOffset=78.276367;
 						};
 					};
 					id=2065;
-					atlOffset=180.2957;
+					atlOffset=78.276367;
 				};
 			};
 			id=2138;
-			atlOffset=186.72984;
+			atlOffset=78.276367;
 		};
 		class Item51
 		{
 			dataType="Layer";
 			name="8.S3_Mission_Controllers_vv4.5.15";
+			state=1;
 			class Entities
 			{
 				items=1;
@@ -86169,6 +86027,7 @@ class Mission
 							{
 							};
 							id=2140;
+							atlOffset=185.97;
 						};
 						class Item1
 						{
@@ -86506,11 +86365,28 @@ class Mission
 						};
 					};
 					id=2139;
-					atlOffset=0.012207031;
+					atlOffset=-3.8785496;
 				};
 			};
 			id=2151;
-			atlOffset=0.012207031;
+			atlOffset=-3.8785496;
+		};
+		class Item52
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14618.658,18.342295,16777.561};
+				angles[]={0,5.4987469,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="this addAction[""Add Actions to Caller"",{params [""_target"",""_caller"",""_actionId"",""_arguments""]; [_caller] call dgScripts_fnc_add_action;}];";
+			};
+			id=2152;
+			type="Land_WoodenTable_small_F";
 		};
 	};
 	class Connections
