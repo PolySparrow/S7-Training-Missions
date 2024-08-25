@@ -1,4 +1,6 @@
-_zeusSlots=[S3,S3_1,S3_2];
+ params [["_zeusSlots",[S3,S3_1,S3_2]];
+
+//_zeusSlots=[S3,S3_1,S3_2];
 
 {
 	_x addAction ["Spawn Helicopter",{call dgScripts_fnc_spawn_helicopters;}];

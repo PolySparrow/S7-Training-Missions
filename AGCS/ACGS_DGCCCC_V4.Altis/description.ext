@@ -61,7 +61,7 @@ class Header {
 };
 
 class Extended_PreInit_EventHandlers {
-    cScripts_preInit = "0 spawn compile preprocessFileLineNumbers 'cScripts\cScripts_preInit.sqf'";1
+    cScripts_preInit = "0 spawn compile preprocessFileLineNumbers 'cScripts\cScripts_preInit.sqf'";
 };
 class Extended_PostInit_EventHandlers {
     cScripts_postInit = "0 spawn compile preprocessFileLineNumbers 'cScripts\cScripts_postInit.sqf'";
@@ -69,8 +69,8 @@ class Extended_PostInit_EventHandlers {
 };
 
 class CfgFunctions {
-    #include "dgScripts\CfgFunctions.hpp"
     #include "cScripts\CfgFunctions.hpp"
+    #include "dgScripts\CfgFunctions.hpp"
 };
 #include "cScripts\CfgLoadouts.hpp"
 
