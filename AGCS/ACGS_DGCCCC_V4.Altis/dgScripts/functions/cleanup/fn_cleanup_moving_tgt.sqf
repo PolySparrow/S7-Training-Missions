@@ -15,9 +15,9 @@
  *
  */
 // Find and delete all civilian vehicles that have crew members
-_filter=["rhsusf_M978A4_usarmy_d","rhsusf_M977A4_AMMO_usarmy_d","vtx_MH60M","TF373_SOAR_MH47G_EasyActions","Land_CampingChair_V2_F","Land_TripodScreen_01_large_F","Flag_Red_F","Land_PortableLight_single_F","B_supplyCrate_F"];
+_filter=["UK3CB_C_Skoda","UK3CB_C_Lada","UK3CB_C_Hatchback","UK3CB_C_Datsun_Open"];
 {
-    if (side _x == civilian && ({!(typeOf _x in _filter)})) then { 
+    if (side _x == civilian && ({(typeOf _x in _filter)})) then { 
         deleteVehicle _x;
     };
 } forEach vehicles;

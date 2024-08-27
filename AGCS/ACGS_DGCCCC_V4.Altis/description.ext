@@ -2,10 +2,10 @@
 
 /*=================== O N L Y   E D I T   B E T W E E N   T H E S E   L I N E S====================*/
 
-dev                 = "1SG Tully.B";
-author              = "1SG Tully.B";
+dev                 = "CW3. Sparrow.P";
+author              = "CW3. Sparrow.P";
 
-onLoadName          = "MyMissionName";
+onLoadName          = "AGCS - DG & CC Course";
 onLoadMission       = "7th Cavalry - S3 1BN Battle Staff Operation";
 onLoadIntro         = "S3 1BN Battle Staff Operation";
 
