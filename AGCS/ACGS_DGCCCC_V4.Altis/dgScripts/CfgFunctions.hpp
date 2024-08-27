@@ -17,6 +17,6 @@ class dgScripts {
 		file = "dgScripts\functions\manager";
 		class continue_range{};
 		class add_action{};
-		class target_hit_message{};
+		class add_event_handler_to_m_s_tgt{};
 	};
 };

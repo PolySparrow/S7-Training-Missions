@@ -1609,3 +1609,17 @@ _object5 moveInDriver _object4;
 _object7 moveInDriver _object6;
 _object9 moveInDriver _object8;
 _object11 moveInDriver _object10;
+
+_units=[_object1,_object3,_object5,_object7,_object9,_object11];
+
+{
+    _x addEventHandler ["Killed",{
+        params ["_unit", "_killer", "_instigator", "_useEffects"];
+        systemChat format["%1 has killed %2",_instigator,_unit];
+    }];
+    _x addEventHandler ["GetOutMan",{
+        params ["_unit", "_role", "_vehicle", "_turret", "_isEject"];
+        systemChat format["%1 has left %2",_unit,_vehicle];
+    }
+    ];
+}foreach _units;
