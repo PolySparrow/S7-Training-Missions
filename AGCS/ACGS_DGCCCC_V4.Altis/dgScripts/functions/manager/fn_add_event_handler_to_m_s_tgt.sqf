@@ -10,7 +10,7 @@ _tgt=[target_11,target_12,target_13,target_14,target_15,target_16];
 		_lastHitTime = _target getVariable ["lastHitTime", 0];
 		if ((_currentTime - _lastHitTime) >= 5) then {
 			_str=format["MS_%1 hit by %2", _target, _shooter];
-			["_str"] remoteExec ["systemChat",-2];
+			[_str] remoteExec ["systemChat",-2];
         // Update the last execution time
         _target setVariable ["lastHitTime", _currentTime, true];
 		};
