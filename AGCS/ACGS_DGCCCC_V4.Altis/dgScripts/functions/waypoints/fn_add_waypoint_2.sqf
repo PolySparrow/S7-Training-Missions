@@ -43,7 +43,7 @@ _Height=150;
 [26484,20661.6,150]
 ]*/
 {
-	_addHeight = _x append [_Height];
-	_HeliPilotGroup addWaypoint [_x,-1];
+	_addHeight = [_x select 0,_x select 1, _Height];
+	_HeliPilotGroup addWaypoint [_addHeight,-1];
 
 } forEach _waypointArray;

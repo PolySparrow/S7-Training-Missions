@@ -3,6 +3,7 @@ class dgScripts {
 		file = "dgScripts\functions\spawners";
 		class spawn_helicopters{};
 		class spawn_moving_tgt{};
+		class spawn_stationary_moving{};
 
 	};
 	class waypoints {

@@ -12,22 +12,22 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=2552;
+		nextID=2582;
 	};
 	class MarkerIDProvider
 	{
-		nextID=45;
+		nextID=47;
 	};
 	class LayerIndexProvider
 	{
-		nextID=1522;
+		nextID=1636;
 	};
 	class Camera
 	{
-		pos[]={22877.898,39.756126,18547.391};
-		dir[]={0.94555831,-0.32560644,0.011829373};
-		up[]={0.32559481,0.94546282,0.0040743547};
-		aside[]={0.012510758,4.3797019e-007,-1.0000379};
+		pos[]={22866.107,28.190001,18036.461};
+		dir[]={-0.53348887,-0.34021538,0.77436626};
+		up[]={-0.19301493,0.94034755,0.28016376};
+		aside[]={0.82348943,0,0.56733161};
 	};
 };
 binarizationWanted=0;
@@ -68402,7 +68402,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=30;
+		items=31;
 		class Item0
 		{
 			dataType="Layer";
@@ -81218,7 +81218,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={22838.443,7.245893,18058.455};
+								position[]={22838.443,7.2454252,18058.455};
 								angles[]={0,4.0748725,0};
 							};
 							side="Empty";
@@ -81229,7 +81229,7 @@ class Mission
 							};
 							id=1720;
 							type="Land_City2_8m_F";
-							atlOffset=4.056468;
+							atlOffset=4.0560002;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -97097,13 +97097,13 @@ class Mission
 		class Item2
 		{
 			dataType="Marker";
-			position[]={25018.18,17.596001,20332.611};
+			position[]={22877.271,9902.6211,18387.225};
 			name="WP-2";
 			text=" WP-2  (Hold 30s)";
 			type="mil_dot";
 			colorName="ColorRed";
 			id=1870;
-			atlOffset=-0.86707687;
+			atlOffset=9899.4307;
 		};
 		class Item3
 		{
@@ -99048,11 +99048,11 @@ class Mission
 				class Item1
 				{
 					dataType="Marker";
-					position[]={26261.203,0,19594.701};
+					position[]={26161.52,0,19741.965};
 					name="MOVE_11";
 					type="mil_dot";
 					id=1994;
-					atlOffset=43.815315;
+					atlOffset=2.5440576;
 				};
 				class Item2
 				{
@@ -99110,7 +99110,7 @@ class Mission
 				class Item8
 				{
 					dataType="Marker";
-					position[]={23060.1,3.1900001,18770.842};
+					position[]={23197.617,3.1900001,18606.453};
 					name="MOVE_2";
 					type="mil_dot";
 					id=2008;
@@ -99222,6 +99222,717 @@ class Mission
 			};
 			id=2551;
 			type="vtx_MH60M";
+		};
+		class Item30
+		{
+			dataType="Layer";
+			name="Layer 1567";
+			state=1;
+			class Entities
+			{
+				items=28;
+				class Item0
+				{
+					dataType="Marker";
+					position[]={22991.533,3.1900001,18151.07};
+					name="RANGE_1_1";
+					type="Empty";
+					id=2552;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_markerHideOnStart";
+							expression="        if (!isServer || is3DEN || !_value) exitWith {};        missionNamespace setVariable [format ['ENH_attributesMarker_%1_initAlpha', _this], markerAlpha _this];        _this setMarkerAlpha 0";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item1
+				{
+					dataType="Marker";
+					position[]={22855.822,3.1900001,18052.508};
+					name="RANGE_1_2";
+					type="Empty";
+					id=2554;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_markerHideOnStart";
+							expression="        if (!isServer || is3DEN || !_value) exitWith {};        missionNamespace setVariable [format ['ENH_attributesMarker_%1_initAlpha', _this], markerAlpha _this];        _this setMarkerAlpha 0";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item2
+				{
+					dataType="Marker";
+					position[]={22962.152,3.1900001,18190.348};
+					name="RANGE_1_3";
+					type="Empty";
+					id=2555;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_markerHideOnStart";
+							expression="        if (!isServer || is3DEN || !_value) exitWith {};        missionNamespace setVariable [format ['ENH_attributesMarker_%1_initAlpha', _this], markerAlpha _this];        _this setMarkerAlpha 0";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item3
+				{
+					dataType="Marker";
+					position[]={22826.387,3.1900001,18092.057};
+					name="RANGE_1_4";
+					type="Empty";
+					id=2556;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_markerHideOnStart";
+							expression="        if (!isServer || is3DEN || !_value) exitWith {};        missionNamespace setVariable [format ['ENH_attributesMarker_%1_initAlpha', _this], markerAlpha _this];        _this setMarkerAlpha 0";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item4
+				{
+					dataType="Marker";
+					position[]={22931.998,3.1900001,18231.338};
+					name="RANGE_1_5";
+					type="Empty";
+					id=2557;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_markerHideOnStart";
+							expression="        if (!isServer || is3DEN || !_value) exitWith {};        missionNamespace setVariable [format ['ENH_attributesMarker_%1_initAlpha', _this], markerAlpha _this];        _this setMarkerAlpha 0";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item5
+				{
+					dataType="Marker";
+					position[]={22797.553,3.1900001,18131.088};
+					name="RANGE_1_6";
+					type="Empty";
+					id=2558;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_markerHideOnStart";
+							expression="        if (!isServer || is3DEN || !_value) exitWith {};        missionNamespace setVariable [format ['ENH_attributesMarker_%1_initAlpha', _this], markerAlpha _this];        _this setMarkerAlpha 0";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item6
+				{
+					dataType="Marker";
+					position[]={22904.207,3.1900001,18269.758};
+					name="RANGE_1_7";
+					type="Empty";
+					id=2559;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_markerHideOnStart";
+							expression="        if (!isServer || is3DEN || !_value) exitWith {};        missionNamespace setVariable [format ['ENH_attributesMarker_%1_initAlpha', _this], markerAlpha _this];        _this setMarkerAlpha 0";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item7
+				{
+					dataType="Marker";
+					position[]={22765.779,3.1900001,18173.998};
+					name="RANGE_1_8";
+					type="Empty";
+					id=2560;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_markerHideOnStart";
+							expression="        if (!isServer || is3DEN || !_value) exitWith {};        missionNamespace setVariable [format ['ENH_attributesMarker_%1_initAlpha', _this], markerAlpha _this];        _this setMarkerAlpha 0";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item8
+				{
+					dataType="Marker";
+					position[]={22872.256,3.1900001,18312.197};
+					name="RANGE_1_9";
+					type="Empty";
+					id=2561;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_markerHideOnStart";
+							expression="        if (!isServer || is3DEN || !_value) exitWith {};        missionNamespace setVariable [format ['ENH_attributesMarker_%1_initAlpha', _this], markerAlpha _this];        _this setMarkerAlpha 0";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item9
+				{
+					dataType="Marker";
+					position[]={22736.852,3.1900001,18212.916};
+					name="RANGE_1_10";
+					type="Empty";
+					id=2562;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_markerHideOnStart";
+							expression="        if (!isServer || is3DEN || !_value) exitWith {};        missionNamespace setVariable [format ['ENH_attributesMarker_%1_initAlpha', _this], markerAlpha _this];        _this setMarkerAlpha 0";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item10
+				{
+					dataType="Marker";
+					position[]={22843.389,3.1900001,18350.965};
+					name="RANGE_1_11";
+					type="Empty";
+					id=2563;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_markerHideOnStart";
+							expression="        if (!isServer || is3DEN || !_value) exitWith {};        missionNamespace setVariable [format ['ENH_attributesMarker_%1_initAlpha', _this], markerAlpha _this];        _this setMarkerAlpha 0";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item11
+				{
+					dataType="Marker";
+					position[]={22705.984,3.1900001,18254.859};
+					name="RANGE_1_12";
+					type="Empty";
+					id=2564;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_markerHideOnStart";
+							expression="        if (!isServer || is3DEN || !_value) exitWith {};        missionNamespace setVariable [format ['ENH_attributesMarker_%1_initAlpha', _this], markerAlpha _this];        _this setMarkerAlpha 0";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item12
+				{
+					dataType="Marker";
+					position[]={22815.668,3.1900001,18388.502};
+					name="RANGE_1_13";
+					type="Empty";
+					id=2565;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_markerHideOnStart";
+							expression="        if (!isServer || is3DEN || !_value) exitWith {};        missionNamespace setVariable [format ['ENH_attributesMarker_%1_initAlpha', _this], markerAlpha _this];        _this setMarkerAlpha 0";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item13
+				{
+					dataType="Marker";
+					position[]={22682.123,3.1900001,18286.947};
+					name="RANGE_1_14";
+					type="Empty";
+					id=2566;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_markerHideOnStart";
+							expression="        if (!isServer || is3DEN || !_value) exitWith {};        missionNamespace setVariable [format ['ENH_attributesMarker_%1_initAlpha', _this], markerAlpha _this];        _this setMarkerAlpha 0";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item14
+				{
+					dataType="Marker";
+					position[]={23145.357,3.1900001,18265.498};
+					name="RANGE_2_1";
+					type="Empty";
+					id=2567;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_markerHideOnStart";
+							expression="        if (!isServer || is3DEN || !_value) exitWith {};        missionNamespace setVariable [format ['ENH_attributesMarker_%1_initAlpha', _this], markerAlpha _this];        _this setMarkerAlpha 0";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item15
+				{
+					dataType="Marker";
+					position[]={23009.059,3.1900001,18169.119};
+					name="RANGE_2_2";
+					type="Empty";
+					id=2568;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_markerHideOnStart";
+							expression="        if (!isServer || is3DEN || !_value) exitWith {};        missionNamespace setVariable [format ['ENH_attributesMarker_%1_initAlpha', _this], markerAlpha _this];        _this setMarkerAlpha 0";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item16
+				{
+					dataType="Marker";
+					position[]={23116.047,3.1900001,18304.93};
+					name="RANGE_2_3";
+					type="Empty";
+					id=2569;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_markerHideOnStart";
+							expression="        if (!isServer || is3DEN || !_value) exitWith {};        missionNamespace setVariable [format ['ENH_attributesMarker_%1_initAlpha', _this], markerAlpha _this];        _this setMarkerAlpha 0";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item17
+				{
+					dataType="Marker";
+					position[]={22982.439,3.1900001,18205.162};
+					name="RANGE_2_4";
+					type="Empty";
+					id=2570;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_markerHideOnStart";
+							expression="        if (!isServer || is3DEN || !_value) exitWith {};        missionNamespace setVariable [format ['ENH_attributesMarker_%1_initAlpha', _this], markerAlpha _this];        _this setMarkerAlpha 0";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item18
+				{
+					dataType="Marker";
+					position[]={23086.715,3.1900001,18344.746};
+					name="RANGE_2_5";
+					type="Empty";
+					id=2571;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_markerHideOnStart";
+							expression="        if (!isServer || is3DEN || !_value) exitWith {};        missionNamespace setVariable [format ['ENH_attributesMarker_%1_initAlpha', _this], markerAlpha _this];        _this setMarkerAlpha 0";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item19
+				{
+					dataType="Marker";
+					position[]={22950.193,3.1900001,18248.178};
+					name="RANGE_2_6";
+					type="Empty";
+					id=2572;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_markerHideOnStart";
+							expression="        if (!isServer || is3DEN || !_value) exitWith {};        missionNamespace setVariable [format ['ENH_attributesMarker_%1_initAlpha', _this], markerAlpha _this];        _this setMarkerAlpha 0";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item20
+				{
+					dataType="Marker";
+					position[]={23057.947,3.1900001,18383.096};
+					name="RANGE_2_7";
+					type="Empty";
+					id=2573;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_markerHideOnStart";
+							expression="        if (!isServer || is3DEN || !_value) exitWith {};        missionNamespace setVariable [format ['ENH_attributesMarker_%1_initAlpha', _this], markerAlpha _this];        _this setMarkerAlpha 0";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item21
+				{
+					dataType="Marker";
+					position[]={22920.094,3.1900001,18289.068};
+					name="RANGE_2_8";
+					type="Empty";
+					id=2574;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_markerHideOnStart";
+							expression="        if (!isServer || is3DEN || !_value) exitWith {};        missionNamespace setVariable [format ['ENH_attributesMarker_%1_initAlpha', _this], markerAlpha _this];        _this setMarkerAlpha 0";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item22
+				{
+					dataType="Marker";
+					position[]={23028.527,3.1900001,18423.455};
+					name="RANGE_2_9";
+					type="Empty";
+					id=2575;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_markerHideOnStart";
+							expression="        if (!isServer || is3DEN || !_value) exitWith {};        missionNamespace setVariable [format ['ENH_attributesMarker_%1_initAlpha', _this], markerAlpha _this];        _this setMarkerAlpha 0";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item23
+				{
+					dataType="Marker";
+					position[]={22893.422,3.1900001,18325.215};
+					name="RANGE_2_10";
+					type="Empty";
+					id=2576;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_markerHideOnStart";
+							expression="        if (!isServer || is3DEN || !_value) exitWith {};        missionNamespace setVariable [format ['ENH_attributesMarker_%1_initAlpha', _this], markerAlpha _this];        _this setMarkerAlpha 0";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item24
+				{
+					dataType="Marker";
+					position[]={22998.348,3.1900001,18464.281};
+					name="RANGE_2_11";
+					type="Empty";
+					id=2577;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_markerHideOnStart";
+							expression="        if (!isServer || is3DEN || !_value) exitWith {};        missionNamespace setVariable [format ['ENH_attributesMarker_%1_initAlpha', _this], markerAlpha _this];        _this setMarkerAlpha 0";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item25
+				{
+					dataType="Marker";
+					position[]={22863.914,3.1900001,18365.201};
+					name="RANGE_2_12";
+					type="Empty";
+					id=2578;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_markerHideOnStart";
+							expression="        if (!isServer || is3DEN || !_value) exitWith {};        missionNamespace setVariable [format ['ENH_attributesMarker_%1_initAlpha', _this], markerAlpha _this];        _this setMarkerAlpha 0";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item26
+				{
+					dataType="Marker";
+					position[]={22971.721,3.1900001,18500.088};
+					name="RANGE_2_13";
+					type="Empty";
+					id=2579;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_markerHideOnStart";
+							expression="        if (!isServer || is3DEN || !_value) exitWith {};        missionNamespace setVariable [format ['ENH_attributesMarker_%1_initAlpha', _this], markerAlpha _this];        _this setMarkerAlpha 0";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item27
+				{
+					dataType="Marker";
+					position[]={22837.145,3.1900001,18400.984};
+					name="RANGE_2_14";
+					type="Empty";
+					id=2580;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_markerHideOnStart";
+							expression="        if (!isServer || is3DEN || !_value) exitWith {};        missionNamespace setVariable [format ['ENH_attributesMarker_%1_initAlpha', _this], markerAlpha _this];        _this setMarkerAlpha 0";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			id=2553;
 		};
 	};
 	class Connections
