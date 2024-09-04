@@ -19,5 +19,6 @@ class dgScripts {
 		class continue_range{};
 		class add_action{};
 		class add_event_handler_to_m_s_tgt{};
+		class enable_disable_ms_range{};
 	};
 };

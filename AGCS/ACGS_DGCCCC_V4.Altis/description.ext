@@ -26,7 +26,7 @@ cba_settings_whitelist[] = {
 };
 
 enableTargetDebug = 1;
-enableDebugConsole[] = {
+enableDebugConsole[] = {//
     "76561197962051582",    // Brostrom.A
     "76561198136771473"     // Turn.J
 };
