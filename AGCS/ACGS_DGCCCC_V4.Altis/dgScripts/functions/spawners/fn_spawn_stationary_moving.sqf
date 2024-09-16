@@ -56,11 +56,14 @@ _endPoint=_SpawnArray select 1;
         params ["_unit", "_killer", "_instigator", "_useEffects"];
         _str= format["%2 has killed %1",_unit,_instigator];
         [_str] remoteExec ["systemChat",-2];
+		_vehicle=vehicle _unit;
+		_vehicle setDamage 1;
     }];
     _driver addEventHandler ["GetOutMan",{
         params ["_unit", "_role", "_vehicle", "_turret", "_isEject"];
         _str= format["%1 has left %2",_unit,_vehicle];
         [_str] remoteExec ["systemChat",-2];
+		_vehicle setDamage 1;
     }
     ];
 	_waypointdestination=_endPoint select _forEachIndex;
