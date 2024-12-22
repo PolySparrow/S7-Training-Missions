@@ -95,8 +95,8 @@ _POS_LOC_ITER=0;
   _vehicle = createVehicle [_Vec,_POSLOC]; 
   _vehicle setDir _Rotation; 
   _title=format["%1 Description",_Vec_Name];
- 
-  _vehicle addAction [_title,{
+  _vehicle allowDamage false;
+  _vehicle addAction [_title,{ 
     _description=_this select 3;
     [_description] call BIS_fnc_guiMessage;
     },_Vec_Description];
