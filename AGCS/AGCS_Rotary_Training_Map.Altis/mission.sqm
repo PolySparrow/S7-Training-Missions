@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=6653;
+		nextID=6657;
 	};
 	class MarkerIDProvider
 	{
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=8803;
+		nextID=8901;
 	};
 	class Camera
 	{
-		pos[]={-21.837063,1313.1704,-272.63672};
-		dir[]={0.32320306,-0.56600708,0.7584036};
-		up[]={0.22190091,0.82440031,0.52069575};
-		aside[]={0.91994566,0,-0.39204621};
+		pos[]={14804.658,58.909409,16652.018};
+		dir[]={0.83943164,-0.23967811,0.48781329};
+		up[]={0.20724757,0.97084492,0.12043664};
+		aside[]={0.50245774,-1.6480044e-07,-0.86463457};
 	};
 };
 binarizationWanted=0;
@@ -70440,6 +70440,7 @@ class Mission
 		{
 			dataType="Layer";
 			name="BRE Tail and Main Rotor Failure";
+			state=1;
 			class Entities
 			{
 				items=7;
@@ -70463,7 +70464,7 @@ class Mission
 				{
 					dataType="Trigger";
 					position[]={14766.388,17.91,16648.678};
-					angle=5.4585152;
+					angle=5.4585171;
 					class Attributes
 					{
 						text="Main Engine Failure";
@@ -71809,7 +71810,6 @@ class Mission
 		{
 			dataType="Layer";
 			name="ARE Task 10: Air to Air";
-			state=1;
 			class Entities
 			{
 				items=11;
@@ -72053,7 +72053,7 @@ class Mission
 						class Item3
 						{
 							dataType="Marker";
-							position[]={18859.25,-0.25,26726.25};
+							position[]={18861.125,-0.25,26726.25};
 							name="CenterMarker";
 							type="Empty";
 							id=3793;
@@ -72079,7 +72079,7 @@ class Mission
 				};
 			};
 			id=3786;
-			atlOffset=3.48841;
+			atlOffset=3.4896598;
 		};
 		class Item8
 		{
