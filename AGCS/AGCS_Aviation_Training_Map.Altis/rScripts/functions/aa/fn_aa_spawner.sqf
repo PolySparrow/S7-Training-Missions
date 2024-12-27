@@ -26,9 +26,21 @@ _i=0;
 
 while {_i<_limit} do { 
 	// Get count of nearby objects before spawning a helicopter
-	_beforecountArray=getpos SpawnArea nearObjects 6000;
+	_beforecountArray=getpos _OuterSpawnArea nearObjects _radius;
 	_beforecount=count _beforecountArray;
 	
+
+	/* Gets a list of all triggers named GA_#
+	{ 
+    private _markerName = vehicleVarName _x;
+    private _markerName = [_markerName, 0, 2] call BIS_fnc_trimString;
+
+    if (toUpper _markerName=='GA_') then 
+    {
+        _GAArray pushBack _x;
+    };   
+	} forEach allMapMarkers "EmptyDetector"; 
+*/
 	// Randomly select a helicopter from the list
 	_HeliType = selectRandom _randomHeli;   
 	
