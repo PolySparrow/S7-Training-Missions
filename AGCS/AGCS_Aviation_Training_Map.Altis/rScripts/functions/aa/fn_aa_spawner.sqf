@@ -18,7 +18,7 @@
  * TO DO: Convert for loop to a while loop using logic from GA
  */
 
-params ["_limit",["_noGunner",false],["_randomHeli",[ "RHS_Mi24P_vdv", "RHS_Mi24V_vdv", "RHS_Mi8MVT3_vdv", "RHS_Ka52_vvsc", "RHS_Mi28N_vvsc" ]],["_MaxHeight",501],["_OuterSpawnArea",SpawnArea],,["_CenterPOS","CenterMarker"],["_radius",6000],["_InnerSpawnArea",Thunderdome]];
+params ["_limit",["_noGunner",false],["_randomHeli",[ "RHS_Mi24P_vdv", "RHS_Mi24V_vdv", "RHS_Mi8MVT3_vdv", "RHS_Ka52_vvsc", "RHS_Mi28N_vvsc" ]],["_MaxHeight",501],["_OuterSpawnArea",SpawnArea],["_radius",6000],["_InnerSpawnArea",Thunderdome],["_CenterPOS","CenterMarker"]];
 
 // List of helicopters that can be spawned
 
@@ -45,7 +45,7 @@ while {_i<_limit} do {
 	_HeliType = selectRandom _randomHeli;   
 	
 	// Get center position for direction calculation
-	_centerPos = getMarkerPos "CenterMarker"; 
+	_centerPos = getMarkerPos _CenterPOS; 
 
 	// Get a random spawn position within SpawnArea
 	_spawnPos = [[_OuterSpawnArea],[_InnerSpawnArea]] call BIS_fnc_randomPos; 
