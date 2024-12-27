@@ -12,12 +12,13 @@
  *
  * Example:
  * [1,false] call rScripts_fnc_aa_spawner
+ * [1,false,["rhs_mig29sm_vvs"],2000,Thunderdome_1,SpawnArea_1] call rScripts_fnc_aa_spawner
  *
  * Public: No
  * TO DO: Convert for loop to a while loop using logic from GA
  */
 
-params ["_limit",["_noGunner",false],["_randomHeli",[ "RHS_Mi24P_vdv", "RHS_Mi24V_vdv", "RHS_Mi8MVT3_vdv", "RHS_Ka52_vvsc", "RHS_Mi28N_vvsc" ]],["_MaxHeight",501],["_InnerSpawnArea",Thunderdome],["_OuterSpawnArea",SpawnArea]];
+params ["_limit",["_noGunner",false],["_randomHeli",[ "RHS_Mi24P_vdv", "RHS_Mi24V_vdv", "RHS_Mi8MVT3_vdv", "RHS_Ka52_vvsc", "RHS_Mi28N_vvsc" ]],["_MaxHeight",501],["_OuterSpawnArea",SpawnArea],["_radius",6000],["_InnerSpawnArea",Thunderdome]];
 
 // List of helicopters that can be spawned
 
@@ -31,12 +32,12 @@ while {_i<_limit} do {
 	// Randomly select a helicopter from the list
 	_HeliType = selectRandom _randomHeli;   
 	
-	// Get a random spawn position within SpawnArea
-	_spawnPos = [[SpawnArea],[Thunderdome]] call BIS_fnc_randomPos; 
-	
 	// Get center position for direction calculation
 	_centerPos = getMarkerPos "CenterMarker"; 
-	
+
+	// Get a random spawn position within SpawnArea
+	_spawnPos = [[_OuterSpawnArea],[_InnerSpawnArea]] call BIS_fnc_randomPos; 
+
 	// Calculate direction for the helicopter to face
 	_direction = _spawnPos getDir _centerPos; 
 	
@@ -62,7 +63,7 @@ while {_i<_limit} do {
 	};
 	
 	// Get count of nearby objects after spawning a helicopter
-	_aftercountArray=getpos SpawnArea nearObjects 6000;
+	_aftercountArray=getpos SpawnArea nearObjects _radius;
 	_aftercount=count _aftercountArray;
 	
 	// Increment counter if new helicopter spawned
