@@ -12,13 +12,13 @@
  *
  * Example:
  * [1,false] call rScripts_fnc_aa_spawner
- * [1,false,["rhs_mig29sm_vvs"],2000,Thunderdome_1,SpawnArea_1] call rScripts_fnc_aa_spawner
+ * [1,false,["rhs_mig29sm_vvs"],2000,SpawnArea_1,17000,Thunderdome_1,"CenterMarker_1",55] call rScripts_fnc_aa_spawner
  *
  * Public: No
  * TO DO: Convert for loop to a while loop using logic from GA
  */
 
-params ["_limit",["_noGunner",false],["_randomHeli",[ "RHS_Mi24P_vdv", "RHS_Mi24V_vdv", "RHS_Mi8MVT3_vdv", "RHS_Ka52_vvsc", "RHS_Mi28N_vvsc" ]],["_MaxHeight",501],["_OuterSpawnArea",SpawnArea],["_radius",6000],["_InnerSpawnArea",Thunderdome],["_CenterPOS","CenterMarker"]];
+params ["_limit",["_noGunner",false],["_randomHeli",[ "RHS_Mi24P_vdv", "RHS_Mi24V_vdv", "RHS_Mi8MVT3_vdv", "RHS_Ka52_vvsc", "RHS_Mi28N_vvsc" ]],["_MaxHeight",501],["_OuterSpawnArea",SpawnArea],["_radius",6000],["_InnerSpawnArea",Thunderdome],["_CenterPOS","CenterMarker"],["_Speed",27.777]];
 
 // List of helicopters that can be spawned
 
@@ -29,18 +29,6 @@ while {_i<_limit} do {
 	_beforecountArray=getpos _OuterSpawnArea nearObjects _radius;
 	_beforecount=count _beforecountArray;
 	
-
-	/* Gets a list of all triggers named GA_#
-	{ 
-    private _markerName = vehicleVarName _x;
-    private _markerName = [_markerName, 0, 2] call BIS_fnc_trimString;
-
-    if (toUpper _markerName=='GA_') then 
-    {
-        _GAArray pushBack _x;
-    };   
-	} forEach allMapMarkers "EmptyDetector"; 
-*/
 	// Randomly select a helicopter from the list
 	_HeliType = selectRandom _randomHeli;   
 	
@@ -60,10 +48,19 @@ while {_i<_limit} do {
 	
 	// Create the helicopter and its crew
 	_Heli = createVehicle [_HeliType,_spawnPos,[],0,"FLY"];
+	
 	createVehicleCrew _Heli;
+	_Heli setPos _spawnPos;
 	_Heli setDir _direction;
 	_HeliGroup=group _Heli;
-	
+	_vel = velocity _Heli;
+
+_additionalSpeed = _speed; // in m/s
+_Heli setVelocity [
+	(sin _direction * _additionalSpeed),
+	(cos _direction * _additionalSpeed),
+	(_vel select 2) // horizontal only
+];
 	// Set the helicopter's unit behaviour to combat and give it a search and destroy waypoint
 	_HeliGroup setBehaviourStrong "COMBAT";
 	_WayPointVar=_HeliGroup addWaypoint [_centerPOS,500];
@@ -78,6 +75,8 @@ while {_i<_limit} do {
 	_aftercountArray=getpos SpawnArea nearObjects _radius;
 	_aftercount=count _aftercountArray;
 	
+
+
 	// Increment counter if new helicopter spawned
 	if (_aftercount>_beforecount) then {
 		_i=_i+1;
