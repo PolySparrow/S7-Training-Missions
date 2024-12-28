@@ -2,10 +2,10 @@
 
 /*=================== O N L Y   E D I T   B E T W E E N   T H E S E   L I N E S====================*/
 
-dev                 = "CW3. Sparrow.P & CW3. Wulf.C";
-author              = "CW3. Sparrow.P & CW3. Wulf.C";
+dev                 = "CW3. Sparrow.P & CW4. Wulf.C";
+author              = "CW3. Sparrow.P & CW4. Wulf.C";
 
-onLoadName          = "Rotary Training Map";
+onLoadName          = "Aviation Training Map";
 onLoadMission       = "7th Cavalry - S3 1BN Battle Staff Operation";
 onLoadIntro         = "S3 1BN Battle Staff Operation";
 
