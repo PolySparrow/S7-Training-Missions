@@ -59,4 +59,18 @@ GA_SELECTOR addAction ["Clean Up All",
 {    
     [_GAArray] call rScripts_fnc_ga_cleanup;
 }];
+_MarkerArray = [
+["RW_ARE_GA","ARE Task 5-7: Flight Planning, Escort, and Ground Attack"]
+	
+];
 
+{
+	_markerName=_x select 0;
+	_Title=_x select 1;
+     _starttitle=format ["Toggle %1 Markers",_Title];
+    _startaction=format ["[""%1""] call rScripts_fnc_toggle_marker;",_markerName];
+   
+    
+    GA_SELECTOR addAction [_Title,_startaction];
+
+} forEach _MarkerArray;

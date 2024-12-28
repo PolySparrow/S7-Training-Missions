@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=10012;
+		nextID=10115;
 	};
 	class Camera
 	{
-		pos[]={14700.93,61.83844,16849.844};
-		dir[]={-0.50629944,-0.8624016,0.0031470552};
-		up[]={-0.86237723,0.50622863,0.0053610275};
-		aside[]={0.0062140035,-1.3062308e-06,1.000024};
+		pos[]={20286.695,186.68565,12935.992};
+		dir[]={0.85941082,-0.40537909,0.31162935};
+		up[]={0.38110402,0.91414219,0.13819194};
+		aside[]={0.34089473,3.0228694e-07,-0.94011456};
 	};
 };
 binarizationWanted=0;
@@ -74373,7 +74373,7 @@ class Mission
 							alpha=0;
 							a=500;
 							b=5;
-							angle=86.999985;
+							angle=86.999977;
 							id=2171;
 						};
 						class Item40
@@ -74387,7 +74387,7 @@ class Mission
 							alpha=0;
 							a=500;
 							b=5;
-							angle=92.999985;
+							angle=92.999977;
 							id=2172;
 						};
 						class Item41
@@ -74565,7 +74565,7 @@ class Mission
 							alpha=0;
 							a=500;
 							b=5;
-							angle=86.999985;
+							angle=86.999977;
 							id=2638;
 						};
 						class Item53
@@ -74579,7 +74579,7 @@ class Mission
 							alpha=0;
 							a=500;
 							b=5;
-							angle=92.999985;
+							angle=92.999977;
 							id=2639;
 						};
 						class Item54
@@ -74714,7 +74714,7 @@ class Mission
 							alpha=0;
 							a=143.198;
 							b=3;
-							angle=158.60696;
+							angle=158.60695;
 							id=2837;
 							atlOffset=1.9546045;
 						};
@@ -74807,7 +74807,7 @@ class Mission
 							name="OTHER_RR_73";
 							type="mil_triangle";
 							alpha=0;
-							angle=270.32193;
+							angle=270.32187;
 							id=2805;
 						};
 						class Item72
@@ -74828,7 +74828,7 @@ class Mission
 							name="OTHER_RR_75";
 							type="mil_triangle";
 							alpha=0;
-							angle=270.32193;
+							angle=270.32187;
 							id=2832;
 							atlOffset=0.63699985;
 						};
@@ -74855,6 +74855,7 @@ class Mission
 		{
 			dataType="Layer";
 			name="Briefing Area";
+			state=1;
 			class Entities
 			{
 				items=3;
@@ -81629,7 +81630,6 @@ class Mission
 		{
 			dataType="Layer";
 			name="ARE/AFWE";
-			state=1;
 			class Entities
 			{
 				items=7;
@@ -81738,7 +81738,6 @@ class Mission
 							{
 							};
 							id=3159;
-							atlOffset=185.97;
 						};
 						class Item1
 						{
@@ -82587,7 +82586,7 @@ class Mission
 						};
 					};
 					id=3179;
-					atlOffset=-6.9894009;
+					atlOffset=-56.399143;
 				};
 				class Item1
 				{
@@ -82694,7 +82693,6 @@ class Mission
 							{
 							};
 							id=3210;
-							atlOffset=185.97;
 						};
 						class Item1
 						{
@@ -83040,7 +83038,7 @@ class Mission
 						};
 					};
 					id=3221;
-					atlOffset=23.192156;
+					atlOffset=23.197243;
 				};
 				class Item2
 				{
@@ -83121,6 +83119,7 @@ class Mission
 							name="RW_ARE_IFR";
 							text="LZ Blind";
 							type="hd_pickup";
+							alpha=0;
 							id=3783;
 							atlOffset=3.6239624e-05;
 						};
@@ -83558,6 +83557,7 @@ class Mission
 									text="ARE Task 10: Air to Air";
 									type="mil_dot";
 									colorName="ColorRed";
+									alpha=0;
 									id=3813;
 									atlOffset=184.08501;
 								};
@@ -83568,6 +83568,7 @@ class Mission
 									name="RW_ARE_A2A_2";
 									markerType="ELLIPSE";
 									type="";
+									alpha=0;
 									fillName="Border";
 									a=5000;
 									b=5000;
@@ -83582,6 +83583,7 @@ class Mission
 									name="RW_ARE_A2A_3";
 									markerType="ELLIPSE";
 									type="";
+									alpha=0;
 									fillName="Border";
 									a=5500;
 									b=5500;
@@ -83595,6 +83597,7 @@ class Mission
 									position[]={18761.875,-0.27900696,27742.25};
 									name="CenterMarker";
 									type="Empty";
+									alpha=0;
 									id=3793;
 									atlOffset=185.69099;
 								};
@@ -83605,6 +83608,7 @@ class Mission
 									name="RW_ARE_A2A_4";
 									markerType="RECTANGLE";
 									type="";
+									alpha=0;
 									fillName="Border";
 									a=5500;
 									b=5500;
@@ -83618,6 +83622,7 @@ class Mission
 									position[]={49283.566,0.077493876,15735.656};
 									name="CenterMarker_1";
 									type="Empty";
+									alpha=0;
 									id=6717;
 									atlOffset=185.9575;
 								};
@@ -83628,6 +83633,7 @@ class Mission
 									name="FW_AFWE_A2A_1";
 									markerType="ELLIPSE";
 									type="";
+									alpha=0;
 									fillName="Border";
 									a=16000;
 									b=16000;
@@ -83642,6 +83648,7 @@ class Mission
 									name="FW_AFWE_A2A_2";
 									markerType="ELLIPSE";
 									type="";
+									alpha=0;
 									fillName="Border";
 									a=16500;
 									b=16500;
@@ -83657,6 +83664,7 @@ class Mission
 									markerType="RECTANGLE";
 									type="";
 									colorName="ColorBlack";
+									alpha=0;
 									fillName="Border";
 									a=16500;
 									b=16500;
@@ -83672,6 +83680,7 @@ class Mission
 									text="AFWE Task 5: Air to Air";
 									type="mil_dot";
 									colorName="ColorRed";
+									alpha=0;
 									id=6727;
 									atlOffset=185.97;
 								};
@@ -83984,7 +83993,7 @@ class Mission
 									type="mil_end";
 									colorName="ColorWEST";
 									alpha=0;
-									angle=212.13397;
+									angle=212.13394;
 									id=2818;
 									atlOffset=-0.00021457672;
 								};
@@ -83997,7 +84006,7 @@ class Mission
 									type="mil_end";
 									colorName="ColorCIV";
 									alpha=0;
-									angle=56.106991;
+									angle=56.106983;
 									id=2819;
 									atlOffset=0.1008606;
 								};
@@ -84146,7 +84155,7 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="this addAction [""ARE Task 9: Kavala"",    " \n "       {     " \n "       _vehicle =""RHS_MELB_H6M"" createVehicle (getpos KAVALA_SPAWN);  " \n "    _vehicle setDir 300; " \n "       }    " \n "      ]; ";
+								init="this addAction [""ARE Task 9: Kavala"",     " \n "       {      " \n "       _vehicle =""RHS_MELB_H6M"" createVehicle (getpos KAVALA_SPAWN);   " \n "    _vehicle setDir 300;  " \n "       }     " \n "      ];  " \n " " \n "   this addAction [""Toggle ARE Task 9: Kavala Markers"",     " \n "       {      " \n "       [""RW_ARE_KAV""] call rScripts_fnc_toggle_marker; " \n "       }     " \n "      ]; ";
 							};
 							id=4130;
 							type="Land_WoodenTable_small_F";
@@ -84216,7 +84225,7 @@ class Mission
 									type="mil_triangle";
 									colorName="ColorBlack";
 									alpha=0;
-									angle=90.312988;
+									angle=90.312981;
 									id=2084;
 									atlOffset=-0.211586;
 								};
@@ -84271,7 +84280,7 @@ class Mission
 									fillName="SolidFull";
 									a=8.4530001;
 									b=3.4960001;
-									angle=120.87098;
+									angle=120.87097;
 									id=2068;
 									atlOffset=3.0875587;
 								};
@@ -84287,7 +84296,7 @@ class Mission
 									fillName="SolidFull";
 									a=8.4530001;
 									b=3.4960001;
-									angle=45.542992;
+									angle=45.542984;
 									id=2069;
 									atlOffset=2.7029867;
 								};
@@ -84319,7 +84328,7 @@ class Mission
 									fillName="SolidFull";
 									a=8.4530001;
 									b=3.4960001;
-									angle=6.9569988;
+									angle=6.9569979;
 									id=2071;
 									atlOffset=2.7686896;
 								};
@@ -84351,7 +84360,7 @@ class Mission
 									fillName="SolidFull";
 									a=10.539;
 									b=3.448;
-									angle=222.67297;
+									angle=222.67294;
 									id=2074;
 									atlOffset=3.7360213;
 								};
@@ -84367,7 +84376,7 @@ class Mission
 									fillName="SolidFull";
 									a=8.4530001;
 									b=3.4330001;
-									angle=222.71297;
+									angle=222.71294;
 									id=2075;
 									atlOffset=0.68128562;
 								};
@@ -84383,7 +84392,7 @@ class Mission
 									fillName="SolidFull";
 									a=8.4530001;
 									b=3.6359999;
-									angle=126.17998;
+									angle=126.17995;
 									id=2080;
 									atlOffset=5.6829967;
 								};
@@ -84415,7 +84424,7 @@ class Mission
 									fillName="SolidFull";
 									a=8.4530001;
 									b=3.6359999;
-									angle=142.64996;
+									angle=142.64995;
 									id=2094;
 									atlOffset=5.683342;
 								};
@@ -84463,7 +84472,7 @@ class Mission
 									fillName="SolidFull";
 									a=8.4530001;
 									b=3.6359999;
-									angle=149.72797;
+									angle=149.72794;
 									id=2096;
 									atlOffset=5.65414;
 								};
@@ -84479,7 +84488,7 @@ class Mission
 									fillName="SolidFull";
 									a=6.4159999;
 									b=3.6359999;
-									angle=133.96696;
+									angle=133.96693;
 									id=2104;
 									atlOffset=6.3443723;
 								};
@@ -84559,7 +84568,7 @@ class Mission
 									fillName="SolidFull";
 									a=8.9390001;
 									b=3.6359999;
-									angle=136.01797;
+									angle=136.01794;
 									id=2111;
 									atlOffset=6.3448658;
 								};
@@ -84637,7 +84646,7 @@ class Mission
 									fillName="SolidFull";
 									a=6.4159999;
 									b=3.6359999;
-									angle=104.07398;
+									angle=104.07397;
 									id=2116;
 									atlOffset=5.1175461;
 								};
@@ -84680,7 +84689,7 @@ class Mission
 				};
 			};
 			id=6722;
-			atlOffset=-45.123741;
+			atlOffset=-44.539082;
 		};
 		class Item11
 		{
@@ -84828,7 +84837,7 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="this addAction [""BRE Task: Dorida"",    " \n "       {     " \n "       _vehicle =""RHS_MELB_H6M"" createVehicle (getpos DORIDA_SPAWN);  " \n "    _vehicle setDir 250; " \n "       }    " \n "      ]; ";
+								init="this addAction [""BRE Task: Dorida"",     " \n "       {      " \n "       _vehicle =""RHS_MELB_H6M"" createVehicle (getpos DORIDA_SPAWN);   " \n "    _vehicle setDir 250;  " \n "       }     " \n "      ];  " \n " " \n "   this addAction [""Toggle BRE Task 10: Dorida Markers"",     " \n "       {      " \n "       [""RW_BRE_DOR""] call rScripts_fnc_toggle_marker; " \n "       }     " \n "      ]; ";
 							};
 							id=4131;
 							type="Land_WoodenTable_small_F";
@@ -84933,7 +84942,7 @@ class Mission
 									type="mil_marker";
 									colorName="ColorCIV";
 									alpha=0;
-									angle=349.63394;
+									angle=349.63388;
 									id=2004;
 									atlOffset=-3.4409065;
 								};
@@ -84949,7 +84958,7 @@ class Mission
 									fillName="SolidFull";
 									a=8.4530001;
 									b=3.0650001;
-									angle=337.49295;
+									angle=337.49292;
 									id=1931;
 									atlOffset=2.9773865;
 								};
@@ -84981,7 +84990,7 @@ class Mission
 									fillName="SolidFull";
 									a=8.4530001;
 									b=3.099;
-									angle=323.25693;
+									angle=323.25687;
 									id=1933;
 									atlOffset=2.9752884;
 								};
@@ -85141,7 +85150,7 @@ class Mission
 									fillName="SolidFull";
 									a=4.6859999;
 									b=2.724;
-									angle=304.80093;
+									angle=304.8009;
 									id=1943;
 									atlOffset=2.8358765;
 								};
@@ -85157,7 +85166,7 @@ class Mission
 									fillName="SolidFull";
 									a=4.5120001;
 									b=2.7019999;
-									angle=358.78394;
+									angle=358.78387;
 									id=1944;
 									atlOffset=2.7233734;
 								};
@@ -85205,7 +85214,7 @@ class Mission
 									fillName="SolidFull";
 									a=8.4530001;
 									b=3.1140001;
-									angle=13.711998;
+									angle=13.711996;
 									id=1947;
 									atlOffset=2.6530914;
 								};
@@ -85237,7 +85246,7 @@ class Mission
 									fillName="SolidFull";
 									a=8.4530001;
 									b=3.0550001;
-									angle=348.45193;
+									angle=348.4519;
 									id=1949;
 									atlOffset=2.9837265;
 								};
@@ -85253,7 +85262,7 @@ class Mission
 									fillName="SolidFull";
 									a=8.4530001;
 									b=3.0380001;
-									angle=338.29993;
+									angle=338.29987;
 									id=1950;
 									atlOffset=2.974205;
 								};
@@ -85317,7 +85326,7 @@ class Mission
 									fillName="SolidFull";
 									a=8.4530001;
 									b=3.0699999;
-									angle=358.58893;
+									angle=358.58887;
 									id=1954;
 									atlOffset=2.9800949;
 								};
@@ -85349,7 +85358,7 @@ class Mission
 									fillName="SolidFull";
 									a=8.4530001;
 									b=3.155;
-									angle=354.86993;
+									angle=354.8699;
 									id=1956;
 									atlOffset=2.8418198;
 								};
@@ -85397,7 +85406,7 @@ class Mission
 									fillName="SolidFull";
 									a=8.4530001;
 									b=2.971;
-									angle=350.03195;
+									angle=350.03189;
 									id=1959;
 									atlOffset=2.9743042;
 								};
@@ -85429,7 +85438,7 @@ class Mission
 									fillName="SolidFull";
 									a=8.4849997;
 									b=3.217;
-									angle=357.61295;
+									angle=357.61288;
 									id=1961;
 									atlOffset=2.9918213;
 								};
@@ -85445,7 +85454,7 @@ class Mission
 									fillName="SolidFull";
 									a=5.335;
 									b=3.02;
-									angle=325.84293;
+									angle=325.84286;
 									id=1962;
 									atlOffset=2.9662399;
 								};
@@ -85461,7 +85470,7 @@ class Mission
 									fillName="SolidFull";
 									a=8.2510004;
 									b=6.2069998;
-									angle=55.995991;
+									angle=55.995983;
 									id=1963;
 									atlOffset=2.968544;
 								};
@@ -85493,7 +85502,7 @@ class Mission
 									fillName="SolidFull";
 									a=8.4530001;
 									b=6.2249999;
-									angle=55.206993;
+									angle=55.206985;
 									id=1965;
 									atlOffset=2.8812103;
 								};
@@ -85509,7 +85518,7 @@ class Mission
 									fillName="SolidFull";
 									a=8.4530001;
 									b=6.105;
-									angle=48.662991;
+									angle=48.662983;
 									id=1966;
 									atlOffset=2.9942322;
 								};
@@ -85541,7 +85550,7 @@ class Mission
 									fillName="SolidFull";
 									a=8.4530001;
 									b=6.0180001;
-									angle=46.829994;
+									angle=46.829987;
 									id=1968;
 									atlOffset=2.2531357;
 								};
@@ -85557,7 +85566,7 @@ class Mission
 									fillName="SolidFull";
 									a=8.4530001;
 									b=6.0149999;
-									angle=48.258991;
+									angle=48.258987;
 									id=1969;
 									atlOffset=2.0476379;
 								};
@@ -85589,7 +85598,7 @@ class Mission
 									fillName="SolidFull";
 									a=8.4530001;
 									b=6.125;
-									angle=48.999992;
+									angle=48.999985;
 									id=1971;
 									atlOffset=2.9876595;
 								};
@@ -85637,7 +85646,7 @@ class Mission
 									fillName="SolidFull";
 									a=8.4530001;
 									b=6.125;
-									angle=31.192993;
+									angle=31.192991;
 									id=1974;
 									atlOffset=2.8376846;
 								};
@@ -85733,7 +85742,7 @@ class Mission
 									fillName="SolidFull";
 									a=19.108;
 									b=6.125;
-									angle=350.37494;
+									angle=350.37488;
 									id=1982;
 									atlOffset=3.0327225;
 								};
@@ -85749,7 +85758,7 @@ class Mission
 									fillName="SolidFull";
 									a=19.108;
 									b=6.125;
-									angle=348.29495;
+									angle=348.29489;
 									id=1983;
 									atlOffset=3.0006104;
 								};
@@ -85797,7 +85806,7 @@ class Mission
 									fillName="SolidFull";
 									a=13.208;
 									b=6.125;
-									angle=347.36594;
+									angle=347.36588;
 									id=1986;
 									atlOffset=2.6601219;
 								};
@@ -85829,7 +85838,7 @@ class Mission
 									fillName="SolidFull";
 									a=13.208;
 									b=6.125;
-									angle=348.53595;
+									angle=348.53589;
 									id=1989;
 									atlOffset=2.6586456;
 								};
@@ -85925,7 +85934,7 @@ class Mission
 									fillName="SolidFull";
 									a=13.208;
 									b=6.125;
-									angle=347.52295;
+									angle=347.52289;
 									id=1995;
 									atlOffset=2.3597717;
 								};
@@ -85941,7 +85950,7 @@ class Mission
 									fillName="SolidFull";
 									a=18.973;
 									b=6.4860001;
-									angle=348.84393;
+									angle=348.8439;
 									id=1996;
 									atlOffset=2.3293324;
 								};
@@ -85957,7 +85966,7 @@ class Mission
 									fillName="SolidFull";
 									a=8.4530001;
 									b=6.125;
-									angle=350.38193;
+									angle=350.3819;
 									id=1997;
 									atlOffset=2.7783451;
 								};
@@ -85973,7 +85982,7 @@ class Mission
 									fillName="SolidFull";
 									a=8.4530001;
 									b=6.125;
-									angle=349.94693;
+									angle=349.94687;
 									id=1998;
 									atlOffset=2.9993896;
 								};
@@ -86005,7 +86014,7 @@ class Mission
 									fillName="SolidFull";
 									a=8.4530001;
 									b=6.125;
-									angle=350.09195;
+									angle=350.09189;
 									id=2000;
 									atlOffset=2.9999657;
 								};
@@ -86021,7 +86030,7 @@ class Mission
 									fillName="SolidFull";
 									a=8.4530001;
 									b=6.125;
-									angle=350.54294;
+									angle=350.54288;
 									id=2001;
 									atlOffset=3.0125656;
 								};
@@ -86053,7 +86062,7 @@ class Mission
 									fillName="SolidFull";
 									a=8.4530001;
 									b=6.125;
-									angle=350.56094;
+									angle=350.56088;
 									id=2005;
 									atlOffset=2.7798939;
 								};
@@ -86085,7 +86094,7 @@ class Mission
 									fillName="SolidFull";
 									a=8.4530001;
 									b=6.125;
-									angle=350.82794;
+									angle=350.82788;
 									id=2007;
 									atlOffset=3.0000763;
 								};
@@ -86101,7 +86110,7 @@ class Mission
 									fillName="SolidFull";
 									a=8.4530001;
 									b=6.125;
-									angle=350.20093;
+									angle=350.2009;
 									id=2008;
 									atlOffset=3.3344555;
 								};
@@ -86133,7 +86142,7 @@ class Mission
 									fillName="SolidFull";
 									a=8.6129999;
 									b=6.1479998;
-									angle=346.48993;
+									angle=346.48987;
 									id=2010;
 									atlOffset=3.5662937;
 								};
@@ -86149,7 +86158,7 @@ class Mission
 									fillName="SolidFull";
 									a=8.6129999;
 									b=6.1479998;
-									angle=343.81995;
+									angle=343.81992;
 									id=2012;
 									atlOffset=3.5667248;
 								};
@@ -86181,7 +86190,7 @@ class Mission
 									fillName="SolidFull";
 									a=8.4530001;
 									b=3.4960001;
-									angle=53.304993;
+									angle=53.304985;
 									id=2015;
 									atlOffset=2.7083073;
 								};
@@ -86213,7 +86222,7 @@ class Mission
 									fillName="SolidFull";
 									a=8.4530001;
 									b=3.4960001;
-									angle=52.336994;
+									angle=52.336987;
 									id=2017;
 									atlOffset=2.7598305;
 								};
@@ -86229,7 +86238,7 @@ class Mission
 									fillName="SolidFull";
 									a=8.4530001;
 									b=3.4960001;
-									angle=51.634991;
+									angle=51.634983;
 									id=2018;
 									atlOffset=2.7599392;
 								};
@@ -86245,7 +86254,7 @@ class Mission
 									fillName="SolidFull";
 									a=8.4530001;
 									b=3.4960001;
-									angle=50.795994;
+									angle=50.795986;
 									id=2019;
 									atlOffset=2.759655;
 								};
@@ -86261,7 +86270,7 @@ class Mission
 									fillName="SolidFull";
 									a=8.4530001;
 									b=3.4960001;
-									angle=49.881992;
+									angle=49.881985;
 									id=2020;
 									atlOffset=2.7808323;
 								};
@@ -86293,7 +86302,7 @@ class Mission
 									fillName="SolidFull";
 									a=8.4530001;
 									b=3.4960001;
-									angle=49.241993;
+									angle=49.241985;
 									id=2022;
 									atlOffset=2.7780972;
 								};
@@ -86309,7 +86318,7 @@ class Mission
 									fillName="SolidFull";
 									a=8.4530001;
 									b=3.4960001;
-									angle=48.472992;
+									angle=48.472984;
 									id=2023;
 									atlOffset=2.7165298;
 								};
@@ -86341,7 +86350,7 @@ class Mission
 									fillName="SolidFull";
 									a=8.4530001;
 									b=3.4960001;
-									angle=47.662991;
+									angle=47.662983;
 									id=2025;
 									atlOffset=2.5628452;
 								};
@@ -86389,7 +86398,7 @@ class Mission
 									fillName="SolidFull";
 									a=8.4530001;
 									b=3.0250001;
-									angle=137.16698;
+									angle=137.16695;
 									id=2028;
 									atlOffset=2.7360153;
 								};
@@ -86405,7 +86414,7 @@ class Mission
 									fillName="SolidFull";
 									a=8.4530001;
 									b=3.0250001;
-									angle=137.89397;
+									angle=137.89395;
 									id=2029;
 									atlOffset=2.7366734;
 								};
@@ -86421,7 +86430,7 @@ class Mission
 									fillName="SolidFull";
 									a=8.4530001;
 									b=3.0250001;
-									angle=137.12196;
+									angle=137.12195;
 									id=2030;
 									atlOffset=2.7365723;
 								};
@@ -86437,7 +86446,7 @@ class Mission
 									fillName="SolidFull";
 									a=8.4530001;
 									b=3.0250001;
-									angle=138.53596;
+									angle=138.53593;
 									id=2031;
 									atlOffset=2.735734;
 								};
@@ -86453,7 +86462,7 @@ class Mission
 									fillName="SolidFull";
 									a=8.4530001;
 									b=3.0250001;
-									angle=138.71696;
+									angle=138.71693;
 									id=2032;
 									atlOffset=2.6774321;
 								};
@@ -86469,7 +86478,7 @@ class Mission
 									fillName="SolidFull";
 									a=8.4530001;
 									b=3.0250001;
-									angle=138.88297;
+									angle=138.88293;
 									id=2033;
 									atlOffset=2.6602859;
 								};
@@ -86549,7 +86558,7 @@ class Mission
 									fillName="SolidFull";
 									a=8.4530001;
 									b=3.0250001;
-									angle=150.51497;
+									angle=150.51494;
 									id=2041;
 									atlOffset=2.658783;
 								};
@@ -86613,7 +86622,7 @@ class Mission
 									fillName="SolidFull";
 									a=8.4530001;
 									b=3.0250001;
-									angle=142.20697;
+									angle=142.20695;
 									id=2045;
 									atlOffset=2.5928535;
 								};
@@ -86661,7 +86670,7 @@ class Mission
 									fillName="SolidFull";
 									a=8.4530001;
 									b=3.0250001;
-									angle=161.31497;
+									angle=161.31494;
 									id=2048;
 									atlOffset=2.6799984;
 								};
@@ -86677,7 +86686,7 @@ class Mission
 									fillName="SolidFull";
 									a=8.4530001;
 									b=3.0250001;
-									angle=178.34798;
+									angle=178.34795;
 									id=2049;
 									atlOffset=2.8374443;
 								};
@@ -86725,7 +86734,7 @@ class Mission
 									fillName="SolidFull";
 									a=8.4530001;
 									b=3.0250001;
-									angle=151.01196;
+									angle=151.01193;
 									id=2052;
 									atlOffset=2.6431675;
 								};
@@ -86741,7 +86750,7 @@ class Mission
 									fillName="SolidFull";
 									a=8.4530001;
 									b=3.0250001;
-									angle=160.66397;
+									angle=160.66396;
 									id=2053;
 									atlOffset=2.7366562;
 								};
@@ -86757,7 +86766,7 @@ class Mission
 									fillName="SolidFull";
 									a=8.4530001;
 									b=3.0250001;
-									angle=166.44096;
+									angle=166.44093;
 									id=2054;
 									atlOffset=2.8435955;
 								};
@@ -86773,7 +86782,7 @@ class Mission
 									fillName="SolidFull";
 									a=8.4530001;
 									b=3.0250001;
-									angle=171.59596;
+									angle=171.59593;
 									id=2055;
 									atlOffset=2.4229736;
 								};
@@ -86789,7 +86798,7 @@ class Mission
 									fillName="SolidFull";
 									a=13.177;
 									b=3.0250001;
-									angle=161.63797;
+									angle=161.63795;
 									id=2056;
 									atlOffset=2.7495384;
 								};
@@ -86805,7 +86814,7 @@ class Mission
 									fillName="SolidFull";
 									a=10.685;
 									b=3.0250001;
-									angle=77.199982;
+									angle=77.199974;
 									id=2057;
 									atlOffset=2.7144375;
 								};
@@ -86821,7 +86830,7 @@ class Mission
 									fillName="SolidFull";
 									a=8.4530001;
 									b=3.0250001;
-									angle=103.22398;
+									angle=103.22397;
 									id=2058;
 									atlOffset=2.4388142;
 								};
@@ -86837,7 +86846,7 @@ class Mission
 									fillName="SolidFull";
 									a=8.4530001;
 									b=3.0250001;
-									angle=107.44398;
+									angle=107.44396;
 									id=2059;
 									atlOffset=2.438427;
 								};
@@ -86853,7 +86862,7 @@ class Mission
 									fillName="SolidFull";
 									a=9.2589998;
 									b=3.0250001;
-									angle=190.60097;
+									angle=190.60094;
 									id=2060;
 									atlOffset=2.4664593;
 								};
@@ -86908,7 +86917,7 @@ class Mission
 									type="mil_triangle";
 									colorName="ColorBlack";
 									alpha=0;
-									angle=90.312996;
+									angle=90.312981;
 									id=2066;
 									atlOffset=-12.787476;
 								};
