@@ -35,9 +35,9 @@ _MarkerArray = [
 	_markerName=_x select 0;
 	_Title=_x select 1;
      _starttitle=format ["Toggle %1 Markers",_Title];
-    _startaction=format ["[%1] call rScripts_fnc_toggle_marker;",_markerName];
+    _startaction=format ["[""%1""] call rScripts_fnc_toggle_marker;",_markerName];
    
     
-    master_marker addAction [_startaction,_startaction];
+    master_marker addAction [_Title,_startaction];
 
 } forEach _MarkerArray;
