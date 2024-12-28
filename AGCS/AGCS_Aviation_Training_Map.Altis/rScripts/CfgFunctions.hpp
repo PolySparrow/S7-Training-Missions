@@ -37,6 +37,8 @@ class rScripts {
 		file = "rScripts\functions\utility";
 		class smoke_maker {};
 		class turnofflights {};
+		class toggle_marker {};
+		class tm_init{};
 	};
 	class mission {
 		file = "rScripts\functions\mission";
