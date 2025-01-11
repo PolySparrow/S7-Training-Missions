@@ -1,0 +1,417 @@
+/*%FSM<COMPILE "C:\Program Files (x86)\Steam\steamapps\common\Arma 3 Tools\FSMEditor\scriptedFSM.cfg, playLaunchAnims">*/
+/*%FSM<HEAD>*/
+/*
+item0[] = {"Start",0,250,-170.000000,0.000000,-70.000000,50.000000,0.000000,"Start"};
+item1[] = {"_",1,250,-175.000000,1050.000000,-75.000000,1100.000000,0.000000,""};
+item2[] = {"_crewAidF__Acts",2,250,-250.000000,150.000000,0.000000,200.000000,0.000000,"_crewAidF" \n """Acts_JetsCrewaidFCrouch_loop_m"""};
+item3[] = {"_crewAidL__Acts",2,250,-250.000000,450.000000,0.000000,500.000000,0.000000,"_crewAidL" \n """Acts_JetsCrewaidLCrouchThumbup_loop_m"""};
+item4[] = {"___6",4,218,-175.000000,525.000000,-75.000000,575.000000,0.000000,"> 6"};
+item5[] = {"_crewAidR__Acts",2,250,-250.000000,600.000000,0.000000,650.000000,0.000000,"_crewAidR" \n """Acts_JetsCrewaidRCrouchThumbup_loop_m"""};
+item6[] = {"___8",4,218,-175.000000,675.000000,-75.000000,725.000000,0.000000,"> 8"};
+item7[] = {"_crewAidF__Acts_1",2,250,-250.000000,750.000000,0.000000,800.000000,0.000000,"_crewAidF" \n """Acts_JetsCrewaidFCrouchThumbup_loop_m"""};
+item8[] = {"___10",4,218,-175.000000,825.000000,-75.000000,875.000000,0.000000,"> 10"};
+item9[] = {"_shooter__Acts_J",2,250,-250.000000,900.000000,0.000000,950.000000,0.000000,"_shooter" \n """Acts_JetsShooterShootingReady_pointing_m"""};
+item10[] = {"Launched",4,218,-175.000000,975.000000,-75.000000,1025.000000,0.000000,"Launched"};
+item11[] = {"___1",4,218,-175.000000,225.000000,-75.000000,275.000000,0.000000,"> 1"};
+item12[] = {"_shooter__Acts_J_1",2,250,-250.000000,300.000000,0.000000,350.000000,0.000000,"_shooter" \n """Acts_JetsShooterShootingReady_loop_m"""};
+item13[] = {"___4",4,218,-175.000000,375.000000,-75.000000,425.000000,0.000000,"> 4"};
+item14[] = {"",7,210,-829.000000,471.000000,-821.000000,479.000000,0.000000,""};
+item15[] = {"",7,210,-829.000000,321.000000,-821.000000,329.000000,0.000000,""};
+item16[] = {"cancelled",4,218,-875.000000,150.000000,-775.000000,200.000000,0.000000,"cancelled"};
+item17[] = {"",7,210,-829.000000,621.000000,-821.000000,629.000000,0.000000,""};
+item18[] = {"",7,210,-829.000000,771.000000,-821.000000,779.000000,0.000000,""};
+item19[] = {"",7,210,-829.000000,921.000000,-821.000000,929.000000,0.000000,""};
+item20[] = {"Reset_animations",1,250,-1010.000000,320.000000,-920.000000,370.000000,0.000000,"Reset" \n "animations"};
+item21[] = {"block_user_action",2,250,-1020.000000,150.000000,-920.000000,200.000000,0.000000,"block user action" \n "until anims are " \n "re-initialized"};
+item22[] = {"avoid_out_and_in",4,218,-1020.000000,240.000000,-920.000000,290.000000,0.000000,"avoid" \n "out and in" \n "transitions"};
+item23[] = {"_",8,218,-170.000000,80.000000,-70.000000,130.000000,0.000000,""};
+link0[] = {0,23};
+link1[] = {2,11};
+link2[] = {2,16};
+link3[] = {3,4};
+link4[] = {3,14};
+link5[] = {4,5};
+link6[] = {5,6};
+link7[] = {5,17};
+link8[] = {6,7};
+link9[] = {7,8};
+link10[] = {7,18};
+link11[] = {8,9};
+link12[] = {9,10};
+link13[] = {9,19};
+link14[] = {10,1};
+link15[] = {11,12};
+link16[] = {12,13};
+link17[] = {12,15};
+link18[] = {13,3};
+link19[] = {14,15};
+link20[] = {15,16};
+link21[] = {16,21};
+link22[] = {17,14};
+link23[] = {18,17};
+link24[] = {19,18};
+link25[] = {21,22};
+link26[] = {22,20};
+link27[] = {23,2};
+globals[] = {0.000000,0,0,0,0,640,480,1,243,6316128,1,-470.599609,154.702881,1212.740601,98.447273,578,1030,1};
+window[] = {2,-1,-1,-1,-1,916,156,1056,156,3,596};
+*//*%FSM</HEAD>*/
+class FSM
+{
+        fsmName = "playLaunchAnims";
+        class States
+        {
+                /*%FSM<STATE "Start">*/
+                class Start
+                {
+                        name = "Start";
+                        itemno = 0;
+                        init = /*%FSM<STATEINIT""">*/"//[""[i] FSM _this: %1"",_this] call bis_fnc_logFormat;" \n
+                         "" \n
+                         "params" \n
+                         "[" \n
+                         "	[""_pilot"",objNull,[objNull]]," \n
+                         "	[""_crew"",[],[[]]]," \n
+                         "	[""_mirroredAnims"",false,[true]]" \n
+                         "];" \n
+                         "" \n
+                         "_crew params [""_shooter"",""_crewAidF"",""_crewAidL"",""_crewAidR""];" \n
+                         "" \n
+                         "private _shooterTransitions =" \n
+                         "[" \n
+                         "	""Acts_JetsShooterShootingLaunch_in""," \n
+                         "	""Acts_JetsShooterShootingLaunch_out""," \n
+                         "	""Acts_JetsShooterShootingReady_in""" \n
+                         "];" \n
+                         "" \n
+                         "private _crewaidFTransitions =" \n
+                         "[" \n
+                         "	""Acts_JetsCrewaidFCrouch_in""," \n
+                         "	""Acts_JetsCrewaidFCrouchThumbup_in""," \n
+                         "	""Acts_JetsCrewaidFCrouchThumbup_out""," \n
+                         "	""Acts_JetsCrewaidFCrouch_out""" \n
+                         "];" \n
+                         "" \n
+                         "private _crewaidLTransitions =" \n
+                         "[" \n
+                         "	""Acts_JetsCrewaidLCrouch_in""," \n
+                         "	""Acts_JetsCrewaidLCrouchThumbup_in""," \n
+                         "	""Acts_JetsCrewaidLCrouchThumbup_out""," \n
+                         "	""Acts_JetsCrewaidLCrouch_out""" \n
+                         "];" \n
+                         "" \n
+                         "private _crewaidRTransitions =" \n
+                         "[" \n
+                         "	""Acts_JetsCrewaidRCrouch_in""," \n
+                         "	""Acts_JetsCrewaidRCrouchThumbup_in""," \n
+                         "	""Acts_JetsCrewaidRCrouchThumbup_out""," \n
+                         "	""Acts_JetsCrewaidRCrouch_out""" \n
+                         "];" \n
+                         ""/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "_">*/
+                                class _
+                                {
+                                        itemno = 23;
+                                        priority = 0.000000;
+                                        to="_crewAidF__Acts";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "_">*/
+                class _
+                {
+                        name = "_";
+                        itemno = 1;
+                        init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "_crewAidF__Acts">*/
+                class _crewAidF__Acts
+                {
+                        name = "_crewAidF__Acts";
+                        itemno = 2;
+                        init = /*%FSM<STATEINIT""">*/"[_crewAidF,""playmovenow"",""Acts_JetsCrewaidFCrouch_loop"",_mirroredAnims] call bis_fnc_carrier01CrewPlayAnim;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "cancelled">*/
+                                class cancelled
+                                {
+                                        itemno = 16;
+                                        priority = 0.000000;
+                                        to="block_user_action";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"_pilot getVariable [""carrierCatapultState"",-1] == -1"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "___1">*/
+                                class ___1
+                                {
+                                        itemno = 11;
+                                        priority = 0.000000;
+                                        to="_shooter__Acts_J_1";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"_pilot getVariable [""carrierCatapultState"",-1] > 1"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "_crewAidL__Acts">*/
+                class _crewAidL__Acts
+                {
+                        name = "_crewAidL__Acts";
+                        itemno = 3;
+                        init = /*%FSM<STATEINIT""">*/"[_crewAidL,""playmovenow"",""Acts_JetsCrewaidLCrouchThumbup_loop"",_mirroredAnims] call bis_fnc_carrier01CrewPlayAnim;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "cancelled">*/
+                                class cancelled
+                                {
+                                        itemno = 16;
+                                        priority = 0.000000;
+                                        to="block_user_action";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"_pilot getVariable [""carrierCatapultState"",-1] == -1"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "___6">*/
+                                class ___6
+                                {
+                                        itemno = 4;
+                                        priority = 0.000000;
+                                        to="_crewAidR__Acts";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"_pilot getVariable [""carrierCatapultState"",-1] > 6"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "_crewAidR__Acts">*/
+                class _crewAidR__Acts
+                {
+                        name = "_crewAidR__Acts";
+                        itemno = 5;
+                        init = /*%FSM<STATEINIT""">*/"[_crewAidR,""playmovenow"",""Acts_JetsCrewaidRCrouchThumbup_loop"",_mirroredAnims] call bis_fnc_carrier01CrewPlayAnim;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "cancelled">*/
+                                class cancelled
+                                {
+                                        itemno = 16;
+                                        priority = 0.000000;
+                                        to="block_user_action";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"_pilot getVariable [""carrierCatapultState"",-1] == -1"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "___8">*/
+                                class ___8
+                                {
+                                        itemno = 6;
+                                        priority = 0.000000;
+                                        to="_crewAidF__Acts_1";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"_pilot getVariable [""carrierCatapultState"",-1] > 8"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "_crewAidF__Acts_1">*/
+                class _crewAidF__Acts_1
+                {
+                        name = "_crewAidF__Acts_1";
+                        itemno = 7;
+                        init = /*%FSM<STATEINIT""">*/"[_crewAidF,""playmovenow"",""Acts_JetsCrewaidFCrouchThumbup_loop"",_mirroredAnims] call bis_fnc_carrier01CrewPlayAnim;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "cancelled">*/
+                                class cancelled
+                                {
+                                        itemno = 16;
+                                        priority = 0.000000;
+                                        to="block_user_action";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"_pilot getVariable [""carrierCatapultState"",-1] == -1"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "___10">*/
+                                class ___10
+                                {
+                                        itemno = 8;
+                                        priority = 0.000000;
+                                        to="_shooter__Acts_J";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"_pilot getVariable [""carrierCatapultState"",-1] > 10"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "_shooter__Acts_J">*/
+                class _shooter__Acts_J
+                {
+                        name = "_shooter__Acts_J";
+                        itemno = 9;
+                        init = /*%FSM<STATEINIT""">*/"[_shooter,""playmovenow"",""Acts_JetsShooterShootingReady_pointing"",_mirroredAnims] call bis_fnc_carrier01CrewPlayAnim;" \n
+                         "[_shooter,""playmove"",""Acts_JetsShooterShootingLaunch_loop"",_mirroredAnims] call bis_fnc_carrier01CrewPlayAnim;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "cancelled">*/
+                                class cancelled
+                                {
+                                        itemno = 16;
+                                        priority = 0.000000;
+                                        to="block_user_action";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"_pilot getVariable [""carrierCatapultState"",-1] == -1"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "Launched">*/
+                                class Launched
+                                {
+                                        itemno = 10;
+                                        priority = 0.000000;
+                                        to="_";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"_pilot getVariable [""carrierCatapultState"",-1] == 25" \n
+                                         ""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "_shooter__Acts_J_1">*/
+                class _shooter__Acts_J_1
+                {
+                        name = "_shooter__Acts_J_1";
+                        itemno = 12;
+                        init = /*%FSM<STATEINIT""">*/"[_shooter,""playmove"",""Acts_JetsShooterShootingReady_loop"",_mirroredAnims] call bis_fnc_carrier01CrewPlayAnim;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "cancelled">*/
+                                class cancelled
+                                {
+                                        itemno = 16;
+                                        priority = 0.000000;
+                                        to="block_user_action";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"_pilot getVariable [""carrierCatapultState"",-1] == -1"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "___4">*/
+                                class ___4
+                                {
+                                        itemno = 13;
+                                        priority = 0.000000;
+                                        to="_crewAidL__Acts";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"_pilot getVariable [""carrierCatapultState"",-1] > 4"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Reset_animations">*/
+                class Reset_animations
+                {
+                        name = "Reset_animations";
+                        itemno = 20;
+                        init = /*%FSM<STATEINIT""">*/"if ([_shooter,""acts_jetsshootershootingready_loop"",_mirroredAnims] call bis_fnc_carrier01CrewInAnim) then" \n
+                         "{" \n
+                         "	[_shooter,""playmovenow"",""Acts_JetsShooterIdle2"",_mirroredAnims] call bis_fnc_carrier01CrewPlayAnim;" \n
+                         "};" \n
+                         "" \n
+                         "if ([_shooter,[""Acts_JetsShooterShootingReady_pointing"",""Acts_JetsShooterShootingLaunch_loop""],_mirroredAnims] call bis_fnc_carrier01CrewInAnim) then" \n
+                         "{" \n
+                         "	[_shooter,""playaction"",""Acts_JetsShooterIdle2_actions"",_mirroredAnims] call bis_fnc_carrier01CrewPlayAnim;" \n
+                         "	[_shooter,""playmovenow"",""Acts_JetsShooterIdle2"",_mirroredAnims] call bis_fnc_carrier01CrewPlayAnim;" \n
+                         "};" \n
+                         "" \n
+                         "if ([_crewAidF,""Acts_JetsCrewaidFCrouchThumbup_loop"",_mirroredAnims] call bis_fnc_carrier01CrewInAnim) then" \n
+                         "{" \n
+                         "	[_crewAidF,""playmove"",""Acts_JetsCrewaidFCrouch_loop"",_mirroredAnims] call bis_fnc_carrier01CrewPlayAnim;" \n
+                         "};" \n
+                         "" \n
+                         "[_crewAidL,""playmovenow"",""Acts_JetsCrewaidLCrouch_loop"",_mirroredAnims] call bis_fnc_carrier01CrewPlayAnim;" \n
+                         "[_crewAidR,""playmovenow"",""Acts_JetsCrewaidRCrouch_loop"",_mirroredAnims] call bis_fnc_carrier01CrewPlayAnim;" \n
+                         "" \n
+                         "//re-enable launch action" \n
+                         "_pilot setVariable ['bis_canLaunch',true];" \n
+                         "" \n
+                         "" \n
+                         "" \n
+                         "" \n
+                         ""/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "block_user_action">*/
+                class block_user_action
+                {
+                        name = "block_user_action";
+                        itemno = 21;
+                        init = /*%FSM<STATEINIT""">*/"_pilot setVariable ['bis_canLaunch',false];"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "avoid_out_and_in">*/
+                                class avoid_out_and_in
+                                {
+                                        itemno = 22;
+                                        priority = 0.000000;
+                                        to="Reset_animations";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"!([_shooter,_shooterTransitions,_mirroredAnims] call bis_fnc_carrier01CrewInAnim) &&" \n
+                                         "!([_crewaidF,_crewaidFTransitions,_mirroredAnims] call bis_fnc_carrier01CrewInAnim) &&" \n
+                                         "!([_crewaidL,_crewaidLTransitions,_mirroredAnims] call bis_fnc_carrier01CrewInAnim) &&" \n
+                                         "!([_crewaidR,_crewaidRTransitions,_mirroredAnims] call bis_fnc_carrier01CrewInAnim)"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+        };
+        initState="Start";
+        finalStates[] =
+        {
+                "_",
+                "Reset_animations",
+        };
+};
+/*%FSM</COMPILE>*/

@@ -2,7 +2,7 @@
 
 /*=================== O N L Y   E D I T   B E T W E E N   T H E S E   L I N E S====================*/
 
-dev                 = "CW3. Sparrow.P & CW4. Wulf.C";
+dev                 = "CW3. Sparrow.P, CW4. Wulf.C, RickOShay";
 author              = "CW3. Sparrow.P & CW4. Wulf.C";
 
 onLoadName          = "Aviation Training Map";
@@ -74,4 +74,19 @@ class CfgFunctions {
 };
 #include "cScripts\CfgLoadouts.hpp"
 
+
 /*           OTHER            */
+class CfgCarrier
+{
+	class LaunchSettings
+	{
+		duration = 10;
+		distance = 15;
+
+		condShow = "true";
+		condProgress = "true";
+
+		codeStart = "[_caller,[BIS_shooter_1,BIS_crewAidF_1,BIS_crewAidL_1,BIS_crewAidR_1],true] execFSM 'playLaunchAnims.fsm'";
+		codeEnd = "";
+	};
+};
